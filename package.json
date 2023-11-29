@@ -1,0 +1,19 @@
+{
+  "name": "sedona",
+  "private": true,
+  "description": "Личный проект «Седона»",
+  "scripts": {
+    "start": "webpack --env mode=development && webpack serve --env mode=development",
+    "build": "webpack --env mode=production"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.8.1",
+    "pug-plugin": "^4.9.9",
+    "sass": "^1.69.0",
+    "sass-loader": "^13.3.2",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
