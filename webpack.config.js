@@ -11,7 +11,9 @@ module.exports = (env) => {
     mode: env.mode ?? 'development',
 
     entry: {
-      index: path.resolve(__dirname, 'source', 'index.pug')
+      index: path.resolve(__dirname, 'source/pug/pages', 'index.pug'),
+      form: path.resolve(__dirname, 'source/pug/pages', 'form.pug'),
+      gallery: path.resolve(__dirname, 'source/pug/pages', 'gallery.pug')
     },
 
     output: {
@@ -34,7 +36,8 @@ module.exports = (env) => {
 
       new CopyPlugin({
         patterns: [
-          {from: 'source/img/sprite.svg', to: 'img/sprite.svg'}
+          {from: 'source/img/sprite.svg', to: 'img/sprite.svg'},
+          {from: 'source/fonts/', to: 'fonts'}
         ]
       })
     ],
