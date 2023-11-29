@@ -1,0 +1,13 @@
+include blocks/blocks.pug
+include blocks/libs/libs.pug
+
+doctype html
+html.page(lang='ru')
+  block head
+  body.page__body
+    block header
+      header.header
+        +navigation
+    block content
+    block footer
+      +footer
