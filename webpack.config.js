@@ -45,7 +45,17 @@ module.exports = (env) => {
 
     devServer: isDevelopment ? {
       port: 5000,
-      open: true
+      open: true,
+
+      static: {
+        directory: path.join(__dirname, 'source')
+      },
+      watchFiles: {
+        paths: ['js/**/*.*', 'scss/**/*.*', '*.pug'],
+        options: {
+          usePolling: true,
+        }
+      }
     } : undefined,
 
     module: {
