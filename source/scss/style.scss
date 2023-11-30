@@ -1,3 +1,5 @@
 //Common
-@use "common/variables.scss";
-@use "common/fonts.scss";
+@use "common/variables";
+@use "common/fonts";
+//Blocks
+@use "blocks/page";
