@@ -36,8 +36,7 @@ module.exports = (env) => {
 
       new CopyPlugin({
         patterns: [
-          {from: 'source/img/sprite.svg', to: 'img/sprite.svg'},
-          {from: 'source/fonts/', to: 'fonts'}
+          {from: 'source/img/*.{png,jpg,webp,svg}', to: 'img/[name][ext]'}
         ]
       })
     ],
