@@ -1,5 +1,27 @@
 @use "../common/variables.scss";
 
+.page {
+  font-family: variables.$font-primary;
+  font-size: calc(100vw / 320 * 10);
+
+  @media (min-width: variables.$tablet) {
+    font-size: calc(100vw / 768 * 10);
+  }
+
+  @media (min-width: variables.$desktop) {
+    font-size: calc(100vw / 1440 * 10);
+  }
+}
+
 .page__body {
-  font-family: "PT Sans", arial, sans-serif;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f2f2f2;
+  color: variables.$text-primary;
+}
+
+.page__content {
+  min-width: 100%;
 }
