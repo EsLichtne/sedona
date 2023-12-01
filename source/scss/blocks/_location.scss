@@ -1,0 +1,9 @@
+@use "../common/variables.scss";
+
+.location__map-image {
+  display: block;
+  max-width: 100%;
+  width: 320px;
+  height: 350px;
+  object-fit: cover;
+}
