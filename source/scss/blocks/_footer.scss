@@ -1,0 +1,21 @@
+@use "../common/variables.scss";
+
+.footer {
+  background-color: variables.$color-secondary;
+}
+
+.footer__wrapper {
+  display: grid;
+  justify-content: center;
+  gap: 30px;
+  padding: 33px 0;
+}
+
+.footer__hashtag {
+  text-align: center;
+  margin: 0;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+}

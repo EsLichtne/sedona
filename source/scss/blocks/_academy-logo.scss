@@ -1,0 +1,24 @@
+@use "../common/variables.scss";
+
+.academy-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: variables.$text-primary;
+
+  &:is(:hover, :focus) {
+    color: variables.$color-primary;
+  }
+
+  &:active {
+    color: variables.$text-primary-active;
+  }
+}
+
+.academy-logo__text {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}

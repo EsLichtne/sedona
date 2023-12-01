@@ -1,0 +1,28 @@
+@use "../common/variables.scss";
+@use "../common/mixins.scss";
+
+.social {
+  @include mixins.list-reset;
+  display: flex;
+  gap: 6px;
+}
+
+.social__link {
+  display: grid;
+  place-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: variables.$color-primary;
+
+  &:is(:hover, :focus) {
+    background-color: variables.$color-primary-hover;
+  }
+
+  &:active {
+    background-color: variables.$color-primary-active;
+
+    & .social__icon {
+      opacity: 0.3;
+    }
+  }
+}
