@@ -9,50 +9,57 @@ block content
     img.hero__image(src='img/sprite.svg#hero-text' width='282' height='214' alt='Добро пожаловать в великолепную Седону, потому что Гранд-Каньон отстой!')
   section.advantages
     h2.visually-hidden Преимущества Седоны.
-    p.advantages__title Седона — небольшой городок в Аризоне, заслуживающий большего!
-    p.advantages__description Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
-    ul.advantages__list
-      li.advantages__item.card
-        .card__wrapper
-          h3.card__title Настоящий городок
-          p.card__description Седона не аттракцион для туристов, там течёт своя жизнь
-        img.card__image(src='img/city-mobile.jpg' width='320' height='260' alt='Город Седона.')
-        article.services
-          h2.visually-hidden Услуги городка.
-          ul.services__list
-            li.services__item
-              h3.services__title Жильё
-              p.services__description Рекомендуем пожить в настоящем мотеле, всё как в кино!
-            li.services__item
-              h3.services__title Еда
-              p.services__description Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
-            li.services__item
-              h3.services__title Сувениры
-              p.services__description Не только китайского, но и настоящего местного производства!
-      li.advantages__item.card
-        .card__wrapper
-          h3.card__title Там есть мост дьявола
-          p.card__description Да, по нему можно пройти! Если вы осмелитесь, разумеется
-        img.card__image(src='img/bridge-mobile.jpg' alt='Мост дьявола.')
-      li.advantages__item.card
-        .card__wrapper
-          h3.card__title Небольшая площадь
-          p.card__description Все достопримечательности находятся очень близко
-      li.advantages__item.card
-        .card__wrapper
-          h3.card__title Красивая дорога
-          p.card__description Ехать в Седону из Лас‑Вегаса совсем не скучно!
-      li.advantages__item.card
-        .card__wrapper
-          h3.card__title Мало туристов
-          p.card__description Большинство едет в Гранд Каньон и толпится там
+    p.advantages__title.title.title--primary Седона — небольшой городок в Аризоне, заслуживающий большего!
+    p.advantages__description.description Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+    .advantages__wrapper
+      ul.advantages__list
+        li.advantages__item.card
+          .card__wrapper
+            h3.card__title.title.title--primary Настоящий городок
+            p.card__description.description Седона не аттракцион для туристов, там течёт своя жизнь
+          img.card__image(src='img/city-mobile.jpg' width='320' height='260' alt='Город Седона.')
+        li.advantages__item.card
+          .card__wrapper
+            h3.card__title.title.title--primary Там есть мост дьявола
+            p.card__description.description Да, по нему можно пройти! Если вы осмелитесь, разумеется
+          img.card__image(src='img/bridge-mobile.jpg' alt='Мост дьявола.')
+        li.advantages__item.card
+          .card__wrapper
+            h3.card__title.title.title--primary Небольшая площадь
+            p.card__description.description Все интересные места находятся очень близко
+        li.advantages__item.card
+          .card__wrapper
+            h3.card__title.title.title--primary Красивая дорога
+            p.card__description.description Ехать в Седону из Лас‑Вегаса совсем не скучно!
+        li.advantages__item.card
+          .card__wrapper
+            h3.card__title.title.title--primary Мало туристов
+            p.card__description.description Большинство едет в Гранд Каньон и толпится там
+      section.services
+        h2.visually-hidden Услуги городка.
+        ul.services__list
+          li.services__item.services__item--house
+            h3.services__title.title.title--primary Жильё
+            p.services__description.description Рекомендуем пожить в настоящем мотеле, всё как в кино!
+          li.services__item.services__item--food
+            h3.services__title.title.title--primary Еда
+            p.services__description.description Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
+          li.services__item.services__item--gift
+            h3.services__title.title.title--primary Сувениры
+            p.services__description.description Не только китайского, но и настоящего местного производства!
   section.hotel-search
     h2.visually-hidden Поиск гостиницы.
-    p.hotel-search__title Заинтересовались?
-    p.hotel-search__description
+    p.hotel-search__title.title Заинтересовались?
+    p.hotel-search__description.description
       | Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
       | гостиниц в Седоне
-    a.hotel-search__button.button.button--primary(href='#') Поиск гостиницы в Седоне
+    a.hotel-search__button.button(href='#') Найти гостиницу
   section.location
     h2.visually-hidden Местоположение на карте.
     #map.location__map
+    img.location__map-image(
+      src="img/map-mobile.png"
+      width="320px"
+      height="350px"
+      alt="Седона на карте, расположенная по обе стороны границы между округами Коконино и Явапаи в северной части долины Верде штата Аризона."
+    )
