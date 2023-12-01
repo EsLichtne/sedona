@@ -1,0 +1,15 @@
+- var socials = [['Вконтакте.', 'https://vk.com/htmlacademy', 'vk'], ['Телеграм.', 'https://t.me/htmlacademy', 'telegram'], ['Ютуб.', 'https://www.youtube.com/user/htmlacademyru', 'youtube']]
+
+mixin social(items=socials, text, image)
+  ul.social
+    each item in items
+      li.social__item
+        a.social__link(
+          class=`.social__link--${item[2]}`
+          href=`${item[1]}`
+          target='_blank')
+          span.visually-hidden #{item[0]}
+          svg.social__icon(
+            width='24'
+            height='24')
+            use(href=`img/sprite.svg#${item[2]}`)
