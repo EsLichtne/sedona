@@ -1,0 +1,5 @@
+@use "../common/variables.scss";
+
+.header {
+  background-color: variables.$color-secondary;
+}
