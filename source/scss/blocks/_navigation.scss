@@ -143,5 +143,18 @@
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
-  color: variables.$text-secondary;
+  color: variables.$text-special;
+
+  &:is(:hover, :focus) {
+    background-color: variables.$color-primary-hover;
+  }
+
+  &:active {
+    background-color: variables.$color-primary-active;
+    color: rgba(255, 255, 255, .3);
+  }
+
+  &:disabled {
+    background-color: variables.$color-primary-disabled;
+  }
 }
