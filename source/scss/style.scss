@@ -1,13 +1,23 @@
 //Common
 @use "common/fonts";
+@use "common/global";
 @use "common/mixins";
 @use "common/variables";
 @use "common/visually-hidden";
 //Blocks
 @use "blocks/academy-logo";
+@use "blocks/advantages";
+@use "blocks/button";
+@use "blocks/card";
+@use "blocks/description";
 @use "blocks/footer";
 @use "blocks/header";
+@use "blocks/hero";
+@use "blocks/hotel-search";
+@use "blocks/location";
 @use "blocks/logo";
 @use "blocks/navigation";
 @use "blocks/page";
+@use "blocks/services";
 @use "blocks/social";
+@use "blocks/title";
