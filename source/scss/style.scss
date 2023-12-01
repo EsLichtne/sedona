@@ -1,5 +1,13 @@
 //Common
-@use "common/variables";
 @use "common/fonts";
+@use "common/mixins";
+@use "common/variables";
+@use "common/visually-hidden";
 //Blocks
+@use "blocks/academy-logo";
+@use "blocks/footer";
+@use "blocks/header";
+@use "blocks/logo";
+@use "blocks/navigation";
 @use "blocks/page";
+@use "blocks/social";
