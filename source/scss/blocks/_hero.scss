@@ -1,0 +1,19 @@
+@use "../common/variables.scss";
+
+.hero {
+  min-height: 389px;
+  padding-top: 90px;
+  padding-bottom: 85px;
+  background-color: #491213;
+  background-image:
+    url("../img/sprite.svg#hero-decor"),
+    url("../img/hero-mobile.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom;
+  background-size: 100% 57px, cover;
+}
+
+.hero__image {
+  display: block;
+  margin: 0 auto;
+}
