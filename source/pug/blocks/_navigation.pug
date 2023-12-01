@@ -14,5 +14,6 @@ mixin navigation(activePage='Главная', items=links)
           each href, value in item
             a.navigation__link(
               href= href
+              target=(value === 'Html Academy' ? '_blank' : '')
               aria-current='page'
               class=(value === activePage ? 'navigation__link--current' : ''))= value
