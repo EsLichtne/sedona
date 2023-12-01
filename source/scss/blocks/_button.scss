@@ -1,0 +1,28 @@
+@use "../common/variables.scss";
+
+.button {
+  display: grid;
+  place-content: center;
+  padding: 16px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: variables.$text-special;
+  background-color: variables.$color-primary;
+  cursor: pointer;
+
+  &:is(:hover, :focus) {
+    background-color: variables.$color-primary-hover;
+  }
+
+  &:active {
+    background-color: variables.$color-primary-active;
+    color: rgba(255, 255, 255, .3);
+  }
+
+  &:disabled {
+    background-color: variables.$color-primary-disabled;
+  }
+}
