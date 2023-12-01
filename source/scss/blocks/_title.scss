@@ -1,0 +1,13 @@
+@use "../common/variables.scss";
+
+.title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-wrap: balance;
+
+  &--primary {
+    font-size: 18px;
+  }
+}
