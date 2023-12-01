@@ -1,0 +1,60 @@
+@use "../common/variables.scss";
+
+.card {
+  counter-increment: number 1;
+}
+
+.card:has(img) {
+  background-color: variables.$color-primary;
+  color: variables.$text-special;
+
+  & .card__wrapper {
+    padding: 37px 18px;
+  }
+
+  & .card__description {
+    color: variables.$text-special;
+  }
+}
+
+.card:not(:has(img)) {
+  background-color: variables.$color-secondary-background;
+
+  &:not(:last-child)::after {
+    content: "";
+    display: block;
+    width: calc(100% - 36px);
+    height: 1px;
+    margin: 0 auto;
+    background-color: #d6d6d6;
+  }
+
+  & .card__wrapper {
+    padding: 24px 26px;
+  }
+}
+
+.card__title {
+  margin: 0;
+  margin-bottom: 11px;
+
+  &::after {
+    content: "— №" counter(number)" —";
+    display: block;
+    margin-bottom: 17px;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+  }
+}
+
+.card__description {
+  margin: 0;
+}
+
+.card__image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
