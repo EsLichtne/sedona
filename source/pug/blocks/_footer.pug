@@ -1,19 +1,14 @@
 mixin footer
   footer.footer
     .footer__wrapper
-      p.footer__hashtag
-      ul.social
-        li.social__item
-          a.social__link(href='#')
-            span.visually-hidden Вконтакте.
-        li.social__item
-          a.social__link(href='#')
-            span.visually-hidden Телеграм.
-        li.social__item
-          a.social__link(href='#')
-            span.visually-hidden Ютуб.
-      a.footer__copyright.academy-logo(
+      p.footer__hashtag #VisitSedona
+      +social
+      a.academy-logo(
         href='https://htmlacademy.ru/intensive/adaptive'
         aria-label='Сайт HTML Academy.'
         target='_blank')
         span.academy-logo__text Разработано
+        svg.academy-logo__image(
+          width='27'
+          height='34')
+          use(href='img/sprite.svg#htmlacademy')
