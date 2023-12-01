@@ -1,0 +1,51 @@
+@use "../common/variables.scss";
+@use "../common/mixins.scss";
+
+.services {
+  padding: 23px 18px 46px;
+  background-color: variables.$color-secondary;
+}
+
+.services__list {
+  @include mixins.list-reset;
+  display: grid;
+  gap: 25px;
+}
+
+.services__item {
+  display: grid;
+  column-gap: 7px;
+  row-gap: 16px;
+  text-align: left;
+
+  &::before {
+    content: "";
+    grid-column: 1 / 2;
+    grid-row: span 2;
+    width: 40px;
+    height: 40px;
+  }
+
+  &--house::before {
+    background-image: url("../img/sprite.svg#house");
+  }
+
+  &--food::before {
+    background-image: url("../img/sprite.svg#food");
+  }
+
+  &--gift::before {
+    background-image: url("../img/sprite.svg#gift");
+  }
+}
+
+.services__title {
+  grid-column: 2 / 3;
+  margin: 0;
+  margin-top: 8px;
+}
+
+.services__description {
+  grid-column: 2 / 3;
+  margin: 0;
+}
