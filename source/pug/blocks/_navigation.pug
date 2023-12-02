@@ -1,6 +1,6 @@
 - var links = [{'Главная':'index.html'}, {'Фото и видео':'gallery.html'}, {'Форма отзыва':'form.html'}, {'Html Academy':'https://htmlacademy.ru/study'}]
 
-mixin navigation(activePage='Главная', items=links)
+mixin navigation(currentPage='Главная', items=links)
   nav.navigation
     .navigation__hat
       a.navigation__logo.logo(href='#')
@@ -16,4 +16,4 @@ mixin navigation(activePage='Главная', items=links)
               href= href
               target=(value === 'Html Academy' ? '_blank' : '')
               aria-current='page'
-              class=(value === activePage ? 'navigation__link--current' : ''))= value
+              class=(value === currentPage ? 'navigation__link--current' : ''))= value
