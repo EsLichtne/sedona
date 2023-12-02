@@ -3,6 +3,10 @@
 
 .navigation {
   padding: 17px 20px;
+
+  @media (min-width: variables.$tablet) {
+    padding: 0;
+  }
 }
 
 .navigation__hat {
@@ -106,32 +110,45 @@
 
   @media (max-width: variables.$mobile) {
     display: none;
+
+    &--open {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: grid;
+      width: 100%;
+      background-color: variables.$color-primary;
+      z-index: 1;
+    }
   }
 
-  &--open {
-    position: absolute;
-    top: 0;
-    left: 0;
+  @media (min-width: variables.$tablet) {
     display: grid;
-    width: 100%;
-    background-color: variables.$color-primary;
-    z-index: 1;
+    grid-template-columns: repeat(5, 153px);
   }
 }
 
 .navigation__item {
   text-align: center;
 
-  &:not(:last-child) {
-    border-bottom: 1px solid rgba(1, 1, 1, .2);
+  @media (max-width: variables.$mobile) {
+    &:not(:last-child) {
+      border-bottom: 1px solid rgba(1, 1, 1, .2);
+    }
+
+    &:not(:first-child) {
+      border-top: 1px solid rgba(255, 255, 255, .2);
+    }
+
+    &:last-child {
+      box-shadow: 0px -7px 7px -5px rgba(0, 0, 0, 0.2) inset;
+    }
   }
 
-  &:not(:first-child) {
-    border-top: 1px solid rgba(255, 255, 255, .2);
-  }
-
-  &:last-child {
-    box-shadow: 0px -7px 7px -5px rgba(0, 0, 0, 0.2) inset;
+  @media (min-width: variables.$tablet) {
+    &:nth-of-type(4n - 1) {
+      grid-column-start: 4;
+    }
   }
 }
 
@@ -145,16 +162,43 @@
   text-decoration: none;
   color: variables.$text-special;
 
-  &:is(:hover, :focus) {
-    background-color: variables.$color-primary-hover;
+  @media (max-width: variables.$mobile) {
+    &:is(:hover, :focus) {
+      background-color: variables.$color-primary-hover;
+    }
+
+    &:active {
+      background-color: variables.$color-primary-active;
+      color: rgba(255, 255, 255, .3);
+    }
+
+    &:disabled {
+      background-color: variables.$color-primary-disabled;
+    }
   }
 
-  &:active {
-    background-color: variables.$color-primary-active;
-    color: rgba(255, 255, 255, .3);
-  }
+  @media (min-width: variables.$tablet) {
+    padding: 18px 0 17px;
+    font-size: 14px;
+    line-height: 21px;
+    color: variables.$text-primary;
 
-  &:disabled {
-    background-color: variables.$color-primary-disabled;
+    &:is(:hover, :focus) {
+      color: variables.$text-primary-hover;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    &--current {
+      color: variables.$text-primary-current;
+
+      &:is(:hover, :focus, :active) {
+        color: variables.$text-primary-current;
+        opacity: 1;
+        cursor: default;
+      }
+    }
   }
 }
