@@ -6,13 +6,12 @@
 
 .card:has(img) {
   background-color: variables.$color-primary;
-  color: variables.$text-special;
 
   & .card__wrapper {
     padding: 37px 18px;
   }
 
-  & .card__description {
+  :is(.card__title, .card__description) {
     color: variables.$text-special;
   }
 }
