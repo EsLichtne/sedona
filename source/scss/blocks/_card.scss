@@ -7,8 +7,28 @@
 .card:has(img) {
   background-color: variables.$color-primary;
 
+  @media (min-width: variables.$tablet) {
+    display: grid;
+
+    &:nth-child(odd) {
+      grid-template-columns: 256px 1fr;
+    }
+
+    &:nth-child(even) {
+      grid-template-columns: 1fr 256px;
+
+      & .card__wrapper {
+        order: 1;
+      }
+    }
+  }
+
   & .card__wrapper {
     padding: 37px 18px;
+
+    @media (min-width: variables.$tablet) {
+      padding: 52px 33px 31px;
+    }
   }
 
   :is(.card__title, .card__description) {
@@ -26,10 +46,18 @@
     height: 1px;
     margin: 0 auto;
     background-color: #d6d6d6;
+
+    @media (min-width: variables.$tablet) {
+      display: none;
+    }
   }
 
   & .card__wrapper {
     padding: 24px 26px;
+
+    @media (min-width: variables.$tablet) {
+      padding: 41px 33px;
+    }
   }
 }
 
@@ -44,6 +72,16 @@
     font-size: 14px;
     line-height: 21px;
     font-weight: 400;
+
+    @media (min-width: variables.$tablet) {
+      margin-top: 12px;
+    }
+  }
+
+  @media (min-width: variables.$tablet) {
+    max-width: 155px;
+    margin: 0 auto;
+    margin-bottom: 24px;
   }
 }
 
@@ -56,4 +94,15 @@
   max-width: 100%;
   height: auto;
   object-fit: contain;
+
+  @media (min-width: variables.$tablet) {
+    width: 512px;
+    height: 256px;
+  }
+}
+
+.card__services {
+  @media (min-width: variables.$tablet) {
+    grid-column: 1 / -1;
+  }
 }
