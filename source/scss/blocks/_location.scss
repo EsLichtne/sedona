@@ -6,4 +6,9 @@
   width: 320px;
   height: 350px;
   object-fit: cover;
+
+  @media (min-width: variables.$tablet) {
+    width: 768px;
+    height: 350px;
+  }
 }
