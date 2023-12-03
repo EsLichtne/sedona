@@ -21,13 +21,16 @@
 .advantages__wrapper {
   padding-top: 37px;
   background-color: variables.$color-primary;
-  background-image: url("../img/sprite.svg#advantages-decor");
+  background-image: url("../img/advantages-decor.svg");
   background-repeat: no-repeat;
   background-size: 100% 37px;
-  background-position: top;
+  background-position: center top;
+
+  @media (min-width: variables.$tablet) {
+    background-image: none;
+  }
 }
 
 .advantages__list {
   @include mixins.list-reset;
 }
-
