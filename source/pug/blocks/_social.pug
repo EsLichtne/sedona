@@ -1,7 +1,7 @@
 - var socials = [['Вконтакте.', 'https://vk.com/htmlacademy', 'vk'], ['Телеграм.', 'https://t.me/htmlacademy', 'telegram'], ['Ютуб.', 'https://www.youtube.com/user/htmlacademyru', 'youtube']]
 
-mixin social(items=socials, text, image)
-  ul.social
+mixin social(cls='', items=socials)
+  ul(class=`${cls}`).social
     each item in items
       li.social__item
         a.social__link(
