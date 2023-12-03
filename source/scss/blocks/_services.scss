@@ -4,12 +4,21 @@
 .services {
   padding: 23px 18px 46px;
   background-color: variables.$color-secondary;
+
+  @media (min-width: variables.$tablet) {
+    padding: 0;
+  }
 }
 
 .services__list {
   @include mixins.list-reset;
   display: grid;
   gap: 25px;
+
+  @media (min-width: variables.$tablet) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+  }
 }
 
 .services__item {
@@ -18,24 +27,52 @@
   row-gap: 16px;
   text-align: left;
 
+  @media (min-width: variables.$tablet) {
+    row-gap: 26px;
+    padding: 60px 33px;
+    text-align: center;
+  }
+
   &::before {
     content: "";
     grid-column: 1 / 2;
     grid-row: span 2;
     width: 40px;
     height: 40px;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (min-width: variables.$tablet) {
+      grid-column: 1 / -1;
+      grid-row: 1 / 2;
+      width: 100px;
+      height: 100px;
+      margin: 0 auto;
+    }
   }
 
   &--house::before {
-    background-image: url("../img/sprite.svg#house");
+    background-image: url("../img/sprite.svg#house-mobile");
+
+    @media (min-width: variables.$tablet) {
+      background-image: url("../img/sprite.svg#house");
+    }
   }
 
   &--food::before {
-    background-image: url("../img/sprite.svg#food");
+    background-image: url("../img/sprite.svg#food-mobile");
+
+    @media (min-width: variables.$tablet) {
+      background-image: url("../img/sprite.svg#food");
+    }
   }
 
   &--gift::before {
-    background-image: url("../img/sprite.svg#gift");
+    background-image: url("../img/sprite.svg#gift-mobile");
+
+    @media (min-width: variables.$tablet) {
+      background-image: url("../img/sprite.svg#gift");
+    }
   }
 }
 
@@ -43,9 +80,18 @@
   grid-column: 2 / 3;
   margin: 0;
   margin-top: 8px;
+
+  @media (min-width: variables.$tablet) {
+    grid-column: 1 / -1;
+    margin: 0;
+  }
 }
 
 .services__description {
   grid-column: 2 / 3;
   margin: 0;
+
+  @media (min-width: variables.$tablet) {
+    grid-column: 1 / -1;
+  }
 }
