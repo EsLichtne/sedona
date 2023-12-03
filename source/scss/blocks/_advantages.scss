@@ -5,17 +5,30 @@
   padding-top: 32px;
   background-color: variables.$color-secondary;
   text-align: center;
+
+  @media (min-width: variables.$tablet) {
+    padding-top: 47px;
+  }
 }
 
 .advantages__title {
   margin: 0;
   margin-bottom: 35px;
+
+  @media (min-width: variables.$tablet) {
+    margin-bottom: 28px;
+  }
 }
 
 .advantages__description {
   max-width: 284px;
   margin: 0 auto;
   margin-bottom: 16px;
+
+  @media (min-width: variables.$tablet) {
+    max-width: 520px;
+    margin-bottom: 55px;
+  }
 }
 
 .advantages__wrapper {
@@ -27,10 +40,24 @@
   background-position: center top;
 
   @media (min-width: variables.$tablet) {
+    padding-top: 0;
     background-image: none;
   }
 }
 
 .advantages__list {
   @include mixins.list-reset;
+
+  @media (min-width: variables.$tablet) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.advantages__item {
+  &:has(img) {
+    @media (min-width: variables.$tablet) {
+      grid-column: 1 / -1;
+    }
+  }
 }
