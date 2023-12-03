@@ -9,6 +9,13 @@
   justify-content: center;
   gap: 30px;
   padding: 33px 0;
+
+  @media (min-width: variables.$tablet) {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 0;
+    padding: 36px 60px;
+  }
 }
 
 .footer__hashtag {
@@ -18,4 +25,18 @@
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
+
+  @media (min-width: variables.$tablet) {
+    justify-self: start;
+  }
+}
+
+.footer__social {
+  justify-self: center;
+}
+
+.footer__copyright {
+  @media (min-width: variables.$tablet) {
+    justify-self: end;
+  }
 }
