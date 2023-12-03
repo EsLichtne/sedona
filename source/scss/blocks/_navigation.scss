@@ -20,6 +20,7 @@
   left: 50%;
   top: -17px;
   transform: translateX(-50%);
+  z-index: 1;
 
   &:is(:hover, :focus) {
     opacity: 0.9;
@@ -39,7 +40,7 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
-  z-index: 2;
+  z-index: 3;
 
   @media (min-width: variables.$tablet) {
     display: none;
@@ -115,7 +116,7 @@
     display: grid;
     width: 100%;
     background-color: variables.$color-primary;
-    z-index: 1;
+    z-index: 2;
     transform: translateY(-226px);
     transition: transform 0.5s;
 
