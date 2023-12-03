@@ -110,15 +110,19 @@
 
   @media (max-width: variables.$mobile) {
     display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+    width: 100%;
+    background-color: variables.$color-primary;
+    z-index: 1;
+    transition: transform 0.5s;
+
 
     &--open {
-      position: absolute;
-      top: 0;
-      left: 0;
-      display: grid;
-      width: 100%;
-      background-color: variables.$color-primary;
-      z-index: 1;
+      transform: translateY(0);
+      transition: transform 0.5s;
     }
   }
 
