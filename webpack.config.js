@@ -51,7 +51,7 @@ module.exports = (env) => {
         directory: path.join(__dirname, 'source')
       },
       watchFiles: {
-        paths: ['js/**/*.*', 'scss/**/*.*', '*.pug'],
+        paths: ['js/**/*.js', 'scss/**/*.scss', '*.pug'],
         options: {
           usePolling: true,
         }
