@@ -12,6 +12,9 @@
   background-size: cover;
 
   @media (min-width: variables.$tablet) {
+    min-height: 518px;
+    padding-top: 77px;
+    padding-bottom: 91px;
     background-image: url("../img/hero-tablet.jpg");
   }
 
@@ -36,5 +39,12 @@
 
 .hero__image {
   display: block;
+  width: 282px;
+  height: 214px;
   margin: 0 auto;
+
+  @media (min-width: variables.$tablet) {
+    width: 461px;
+    height: 350px;
+  }
 }
