@@ -109,7 +109,6 @@
   @include mixins.list-reset;
 
   @media (max-width: variables.$mobile) {
-    display: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -117,6 +116,7 @@
     width: 100%;
     background-color: variables.$color-primary;
     z-index: 1;
+    transform: translateY(-226px);
     transition: transform 0.5s;
 
 
