@@ -5,4 +5,9 @@
   line-height: 21px;
   text-transform: uppercase;
   color: variables.$text-secondary;
+
+  @media (min-width: variables.$tablet) {
+    font-size: 14px;
+    line-height: 21px;
+  }
 }
