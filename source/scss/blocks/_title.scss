@@ -10,5 +10,14 @@
 
   &--primary {
     font-size: 18px;
+
+    @media (min-width: variables.$tablet) {
+      font-size: 21px;
+    }
+  }
+
+  @media (min-width: variables.$tablet) {
+    font-size: 30px;
+    line-height: 26px;
   }
 }
