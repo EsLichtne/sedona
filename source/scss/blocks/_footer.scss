@@ -8,7 +8,7 @@
   display: grid;
   justify-content: center;
   gap: 30px;
-  padding: 33px 0;
+  padding: 42px 0;
 
   @media (min-width: variables.$tablet) {
     grid-template-columns: repeat(3, 1fr);

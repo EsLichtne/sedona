@@ -2,7 +2,7 @@
 @use "../common/mixins.scss";
 
 .services {
-  padding: 23px 18px 46px;
+  padding: 23px 18px 45px;
   background-color: variables.$color-secondary;
 
   @media (min-width: variables.$tablet) {
@@ -13,7 +13,7 @@
 .services__list {
   @include mixins.list-reset;
   display: grid;
-  gap: 25px;
+  gap: 24px;
 
   @media (min-width: variables.$tablet) {
     grid-template-columns: repeat(3, 1fr);

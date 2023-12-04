@@ -20,6 +20,9 @@
   }
 
   &:nth-child(even) {
+    .card__wrapper {
+      padding: 37px 18px 36px 18px;
+    }
 
     @media (min-width: variables.$tablet) {
       display: grid;
@@ -37,7 +40,7 @@
 
 
   & .card__wrapper {
-    padding: 37px 18px;
+    padding: 33px 18px 39px 18px;
 
     @media (min-width: variables.$tablet) {
       padding: 52px 33px 31px;
