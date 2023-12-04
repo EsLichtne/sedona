@@ -1,0 +1,78 @@
+@use "../common/variables.scss";
+
+.product-card {
+  position: relative;
+  display: grid;
+  padding: 24px 0 25px;
+
+  &::before,
+  &:last-child::after {
+    content: "";
+    position: absolute;
+    left: -20px;
+    width: calc(100% + 40px);
+    height: 1px;
+    background-color: #e5e5e5;
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+}
+
+.product-card__title {
+  margin: 0;
+  margin-bottom: 1px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.product-card__image-wrapper {
+  order: -1;
+  margin-bottom: 15px;
+}
+
+.product-card__image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: scale-down;
+}
+
+.product-card__author {
+  margin: 0;
+  margin-bottom: 11px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: variables.$text-secondary;
+}
+
+.product-card__likes {
+  display: flex;
+  column-gap: 14px;
+  margin: 0;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 23px;
+    height: 21px;
+    background-image: url("../img/sprite.svg#like-icon");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.product-card__likes-count {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+}

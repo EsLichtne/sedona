@@ -1,0 +1,23 @@
+@use "../common/variables.scss";
+@use "../common/mixins.scss";
+
+.gallery {
+  padding: 37px 20px 0;
+  background-color: variables.$color-secondary;
+}
+
+.gallery__title {
+  margin: 0;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.gallery__description {
+  margin: 0;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.gallery__list {
+  @include mixins.list-reset;
+}
