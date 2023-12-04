@@ -10,4 +10,9 @@
     font-size: 14px;
     line-height: 21px;
   }
+
+  @media (min-width: variables.$desktop) {
+    font-size: 14px;
+    line-height: 21px;
+  }
 }
