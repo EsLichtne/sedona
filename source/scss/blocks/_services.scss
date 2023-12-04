@@ -33,6 +33,11 @@
     text-align: center;
   }
 
+  @media (min-width: variables.$desktop) {
+    row-gap: 27px;
+    padding: 69px 50px;
+  }
+
   &::before {
     content: "";
     grid-column: 1 / 2;
@@ -48,6 +53,11 @@
       width: 100px;
       height: 100px;
       margin: 0 auto;
+    }
+
+    @media (min-width: variables.$desktop) {
+      width: 100px;
+      height: 100px;
     }
   }
 
