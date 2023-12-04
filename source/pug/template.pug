@@ -5,10 +5,11 @@ doctype html
 html.page(lang='ru')
   block head
   body.page__body
-    block header
-      header.header
-        +navigation
-    main.page__content
-      block content
-    block footer
-      +footer
+    .container
+      block header
+        header.header
+          +navigation
+      main.page__content
+        block content
+      block footer
+        +footer
