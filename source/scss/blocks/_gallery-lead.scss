@@ -6,7 +6,12 @@
   background-image: url("../img/hero-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center -170px;
+  background-position: center -260px;
+
+  @media (min-width: variables.$tablet) {
+    padding: 95px 0 85px;
+    background-image: url("../img/hero-tablet.jpg");
+  }
 }
 
 .gallery-lead__image {
@@ -14,4 +19,9 @@
   width: 229px;
   height: 39px;
   margin: 0 auto;
+
+  @media (min-width: variables.$tablet) {
+    width: 457px;
+    height: 77px;
+  }
 }
