@@ -13,7 +13,7 @@
 
   @media (min-width: variables.$tablet) {
     min-height: 518px;
-    padding-top: 78px;
+    padding-top: 77px;
     padding-bottom: 90px;
     background-image: url("../img/hero-tablet.jpg");
   }
@@ -40,7 +40,6 @@
 
     @media (min-width: variables.$tablet) {
       height: 57px;
-      bottom: -1px;
     }
 
     @media (min-width: variables.$desktop) {
