@@ -4,21 +4,29 @@
 @use "common/mixins";
 @use "common/variables";
 @use "common/visually-hidden";
-//Blocks
+//Libs
 @use "blocks/academy-logo";
-@use "blocks/advantages";
 @use "blocks/button";
-@use "blocks/card";
 @use "blocks/container";
 @use "blocks/description";
 @use "blocks/footer";
 @use "blocks/header";
-@use "blocks/hero";
-@use "blocks/hotel-search";
-@use "blocks/location";
 @use "blocks/logo";
 @use "blocks/navigation";
 @use "blocks/page";
-@use "blocks/services";
 @use "blocks/social";
 @use "blocks/title";
+@use "blocks/triangle-decor";
+//Index
+@use "blocks/advantages";
+@use "blocks/card";
+@use "blocks/hero";
+@use "blocks/hotel-search";
+@use "blocks/location";
+@use "blocks/services";
+//Gallery
+@use "blocks/gallery-lead";
+@use "blocks/gallery";
+@use "blocks/presentation";
+@use "blocks/product-card";
+@use "blocks/video";
