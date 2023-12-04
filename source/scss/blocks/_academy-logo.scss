@@ -21,4 +21,14 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+
+  @media (min-width: variables.$tablet) {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    font-size: 14px;
+    line-height: 21px;
+  }
 }
