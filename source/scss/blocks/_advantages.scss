@@ -9,6 +9,10 @@
   @media (min-width: variables.$tablet) {
     padding-top: 47px;
   }
+
+  @media (min-width: variables.$desktop) {
+    padding-top: 59px;
+  }
 }
 
 .advantages__title {
@@ -17,6 +21,10 @@
 
   @media (min-width: variables.$tablet) {
     margin-bottom: 28px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    margin-bottom: 25px;
   }
 }
 
@@ -28,6 +36,11 @@
   @media (min-width: variables.$tablet) {
     max-width: 520px;
     margin-bottom: 55px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    max-width: 520px;
+    margin-bottom: 44px;
   }
 }
 
