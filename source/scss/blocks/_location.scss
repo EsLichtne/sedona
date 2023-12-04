@@ -3,12 +3,7 @@
 .location__map-image {
   display: block;
   max-width: 100%;
-  width: 320px;
-  height: 350px;
+  width: 100%;
+  height: auto;
   object-fit: cover;
-
-  @media (min-width: variables.$tablet) {
-    width: 768px;
-    height: 350px;
-  }
 }
