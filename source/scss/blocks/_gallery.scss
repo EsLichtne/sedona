@@ -4,18 +4,32 @@
 .gallery {
   padding: 37px 20px 0;
   background-color: variables.$color-secondary;
+
+  @media (min-width: variables.$tablet) {
+    padding: 66px 60px 58px;
+  }
 }
 
 .gallery__title {
   margin: 0;
   margin-bottom: 24px;
   text-align: center;
+
+  @media (min-width: variables.$tablet) {
+    margin-bottom: 32px;
+  }
 }
 
 .gallery__description {
   margin: 0;
   margin-bottom: 25px;
   text-align: center;
+
+  @media (min-width: variables.$tablet) {
+    max-width: 445px;
+    margin: 0 auto;
+    margin-bottom: 67px;
+  }
 }
 
 .gallery__list {
