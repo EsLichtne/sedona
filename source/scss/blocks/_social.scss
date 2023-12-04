@@ -5,6 +5,14 @@
   @include mixins.list-reset;
   display: flex;
   gap: 6px;
+
+  @media (min-width: variables.$tablet) {
+    gap: 6px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    gap: 6px;
+  }
 }
 
 .social__link {
@@ -13,6 +21,16 @@
   width: 48px;
   height: 48px;
   background-color: variables.$color-primary;
+
+  @media (min-width: variables.$tablet) {
+    width: 48px;
+    height: 48px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    width: 48px;
+    height: 48px;
+  }
 
   &:is(:hover, :focus) {
     background-color: variables.$color-primary-hover;
