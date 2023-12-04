@@ -11,6 +11,7 @@
   text-decoration: none;
   color: variables.$text-special;
   background-color: variables.$color-primary;
+  border: none;
   cursor: pointer;
 
   @media (min-width: variables.$tablet) {
