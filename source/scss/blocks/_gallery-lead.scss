@@ -1,0 +1,17 @@
+@use "../common/variables.scss";
+
+.gallery-lead {
+  padding: 52px 0 67px;
+  background-color: variables.$color-secondary;
+  background-image: url("../img/hero-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center -170px;
+}
+
+.gallery-lead__image {
+  display: block;
+  width: 229px;
+  height: 39px;
+  margin: 0 auto;
+}
