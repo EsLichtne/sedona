@@ -36,7 +36,9 @@ module.exports = (env) => {
 
       new CopyPlugin({
         patterns: [
-          {from: 'source/img/*.{png,jpg,webp,svg}', to: 'img/[name][ext]'}
+          {from: 'source/img/**/*.{png,jpg,webp,svg}', to: 'img/[name][ext]'},
+          {from: 'source/favicon.ico', to: ''},
+          {from: 'source/manifest.webmanifest', to: ''}
         ]
       })
     ],
@@ -77,7 +79,14 @@ module.exports = (env) => {
           generator: {
             filename: 'fonts/[name][ext]'
           },
-        }
+        },
+        {
+          test: /\.(png|jpg|svg)/,
+          type: 'asset/resource',
+          generator: {
+            filename: 'img/[name].[hash:8][ext]',
+          },
+        },
       ],
     }
   }
