@@ -1,0 +1,18 @@
+@use "../common/variables.scss";
+
+.presentation {
+  padding: 17px 20px 0;
+  text-align: center;
+  background-color: variables.$color-secondary;
+}
+
+.presentation__title {
+  margin: 0;
+  margin-bottom: 27px;
+}
+
+.presentation__description {
+  max-width: 277px;
+  margin: 0;
+  margin-bottom: 38px;
+}
