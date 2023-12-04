@@ -7,27 +7,44 @@
 .card:has(img) {
   background-color: variables.$color-primary;
 
-  @media (min-width: variables.$tablet) {
-    display: grid;
+  &:nth-child(odd) {
 
-    &:nth-child(odd) {
+    @media (min-width: variables.$tablet) {
+      display: grid;
       grid-template-columns: 256px 1fr;
     }
 
-    &:nth-child(even) {
+    @media (min-width: variables.$desktop) {
+      grid-template-columns: 400px 1fr;
+    }
+  }
+
+  &:nth-child(even) {
+
+    @media (min-width: variables.$tablet) {
+      display: grid;
       grid-template-columns: 1fr 256px;
 
       & .card__wrapper {
         order: 1;
       }
     }
+
+    @media (min-width: variables.$desktop) {
+      grid-template-columns: 1fr 400px;
+    }
   }
+
 
   & .card__wrapper {
     padding: 37px 18px;
 
     @media (min-width: variables.$tablet) {
       padding: 52px 33px 31px;
+    }
+
+    @media (min-width: variables.$desktop) {
+      padding: 52px 50px 51px;
     }
   }
 
@@ -58,17 +75,33 @@
     @media (min-width: variables.$tablet) {
       padding: 41px 33px;
     }
+
+    @media (min-width: variables.$desktop) {
+      padding: 52px 50px;
+    }
   }
 }
 
 .card__title {
   margin: 0;
-  margin-bottom: 11px;
+  margin-bottom: 17px;
+
+  @media (min-width: variables.$tablet) {
+    max-width: 155px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    max-width: 155px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+  }
 
   &::after {
     content: "— №" counter(number)" —";
     display: block;
-    margin-bottom: 17px;
+    margin-top: 11px;
     font-size: 14px;
     line-height: 21px;
     font-weight: 400;
@@ -76,12 +109,10 @@
     @media (min-width: variables.$tablet) {
       margin-top: 12px;
     }
-  }
 
-  @media (min-width: variables.$tablet) {
-    max-width: 155px;
-    margin: 0 auto;
-    margin-bottom: 24px;
+    @media (min-width: variables.$tablet) {
+      margin-top: 12px;
+    }
   }
 }
 
@@ -91,14 +122,9 @@
 
 .card__image {
   display: block;
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
-
-  @media (min-width: variables.$tablet) {
-    width: 512px;
-    height: 256px;
-  }
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .card__services {
