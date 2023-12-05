@@ -3,6 +3,10 @@ extends ../template.pug
 block head
   +head('Главная')
 
+block header
+  header.header
+    +navigation('Главная')
+
 block content
   h1.visually-hidden Неофициальный сайт города Седона.
   section.hero.triangle-decor
