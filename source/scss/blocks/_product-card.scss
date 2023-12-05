@@ -145,6 +145,7 @@
     @media (min-width: variables.$tablet) {
       width: 23px;
       height: 21px;
+      margin-bottom: 10px;
     }
 
     @media (min-width: variables.$desktop) {
@@ -161,6 +162,7 @@
   text-transform: uppercase;
 
   @media (min-width: variables.$tablet) {
+    padding-top: 5px;
     font-size: 14px;
     line-height: 21px;
   }

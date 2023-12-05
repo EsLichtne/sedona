@@ -9,8 +9,9 @@
   background-position: center -231px;
 
   @media (min-width: variables.$tablet) {
-    padding: 95px 0 85px;
+    padding: 95px 0 118px;
     background-image: url("../img/hero-tablet.jpg");
+    background-position: center -228px;
   }
 
   @media (min-width: variables.$desktop) {
