@@ -6,7 +6,11 @@
   background-color: variables.$color-secondary;
 
   @media (min-width: variables.$tablet) {
-    padding: 66px 60px 58px;
+    padding: 66px 60px 29px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    padding: 100px 0 31px;
   }
 }
 
@@ -16,6 +20,10 @@
   text-align: center;
 
   @media (min-width: variables.$tablet) {
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: variables.$desktop) {
     margin-bottom: 32px;
   }
 }
@@ -30,6 +38,11 @@
     margin: 0 auto;
     margin-bottom: 67px;
   }
+
+  @media (min-width: variables.$desktop) {
+    max-width: 460px;
+    margin-bottom: 65px;
+  }
 }
 
 .gallery__list {
@@ -38,6 +51,10 @@
   @media (min-width: variables.$tablet) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: variables.$desktop) {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
