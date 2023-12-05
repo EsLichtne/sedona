@@ -4,9 +4,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+  gap: min(1.2rem, 18px);
   text-decoration: none;
   color: variables.$text-primary;
+
+  @media (min-width: variables.$tablet) {
+    gap: min(1.2rem);
+  }
+
+  @media (min-width: variables.$desktop) {
+    gap: min(1.2rem);
+
+  }
 
   &:is(:hover, :focus) {
     color: variables.$color-primary;
@@ -18,17 +27,32 @@
 }
 
 .academy-logo__text {
-  font-size: 14px;
-  line-height: 21px;
+  font-size: min(1.4rem, 21px);
+  line-height: min(2.1rem, 31px);
   text-transform: uppercase;
 
   @media (min-width: variables.$tablet) {
-    font-size: 14px;
-    line-height: 21px;
+    font-size: min(1.4rem);
+    line-height: min(2.1rem);
   }
 
   @media (min-width: variables.$desktop) {
-    font-size: 14px;
-    line-height: 21px;
+    font-size: min(1.4rem);
+    line-height: min(2.1rem);
+  }
+}
+
+.academy-logo__image {
+  width: min(2.7rem, 40px);
+  height: min(3.4rem, 51px);
+
+  @media (min-width: variables.$tablet) {
+    width: min(2.7rem);
+    height: min(3.4rem);
+  }
+
+  @media (min-width: variables.$desktop) {
+    width: min(2.7rem);
+    height: min(3.4rem);
   }
 }
