@@ -69,6 +69,7 @@
   @media (min-width: variables.$desktop) {
     grid-column: 1 / -1;
     grid-row: 2 / 3;
+    padding: 19px 21px 18px 25px;
     color: variables.$text-special;
     background-color: rgba(0, 0, 0, .3);
   }
@@ -149,7 +150,16 @@
     }
 
     @media (min-width: variables.$desktop) {
+      margin-bottom: 10px;
       background-image: url("../img/sprite.svg#like-icon-special");
+    }
+  }
+
+  &:not(:first-child) {
+    &::before {
+      @media (min-width: variables.$desktop) {
+        margin-bottom: 5px;
+      }
     }
   }
 }
@@ -170,5 +180,17 @@
   @media (min-width: variables.$desktop) {
     font-size: 14px;
     line-height: 21px;
+  }
+}
+
+.product-card:first-child {
+  @media (min-width: variables.$desktop) {
+    & .product-card__content-wrapper {
+      padding: 22px 20px 15px;
+    }
+
+    & .product-card__likes::before {
+      margin-bottom: 10px;
+    }
   }
 }

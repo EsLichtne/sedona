@@ -15,8 +15,9 @@
   }
 
   @media (min-width: variables.$desktop) {
-    padding: 101px 0 76px;
+    padding: 101px 0 120px;
     background-image: url("../img/hero-desktop.jpg");
+    background-position: center -217px;
   }
 }
 
