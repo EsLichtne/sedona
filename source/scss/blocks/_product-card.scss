@@ -5,6 +5,10 @@
   display: grid;
   padding: 24px 0 25px;
 
+  @media (min-width: variables.$tablet) {
+    padding: 0;
+  }
+
   &::before,
   &:last-child::after {
     content: "";
@@ -13,6 +17,10 @@
     width: calc(100% + 40px);
     height: 1px;
     background-color: #e5e5e5;
+
+    @media (min-width: variables.$tablet) {
+      display: none;
+    }
   }
 
   &::before {
@@ -24,18 +32,12 @@
   }
 }
 
-.product-card__title {
-  margin: 0;
-  margin-bottom: 1px;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
 .product-card__image-wrapper {
-  order: -1;
   margin-bottom: 15px;
+
+  @media (min-width: variables.$tablet) {
+    margin: 0;
+  }
 }
 
 .product-card__image {
@@ -45,6 +47,33 @@
   object-fit: scale-down;
 }
 
+.product-card__content-wrapper {
+  @media (min-width: variables.$tablet) {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-auto-flow: dense;
+    align-items: center;
+    padding: 22px 20px 15px;
+    background-color: #f2f2f2;
+  }
+}
+
+.product-card__title {
+  margin: 0;
+  margin-bottom: 1px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  @media (min-width: variables.$tablet) {
+    grid-column: 1 / 2;
+    margin-bottom: 1px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
 .product-card__author {
   margin: 0;
   margin-bottom: 11px;
@@ -52,12 +81,25 @@
   line-height: 21px;
   font-weight: 400;
   color: variables.$text-secondary;
+
+  @media (min-width: variables.$tablet) {
+    grid-column: 1 / 2;
+    margin: 0;
+    font-size: 14px;
+    line-height: 21px;
+  }
 }
 
 .product-card__likes {
   display: flex;
   column-gap: 14px;
   margin: 0;
+
+  @media (min-width: variables.$tablet) {
+    grid-column: 2 / 3;
+    grid-row: span 2;
+    column-gap: 9px;
+  }
 
   &::before {
     content: "";
@@ -67,6 +109,11 @@
     background-image: url("../img/sprite.svg#like-icon");
     background-repeat: no-repeat;
     background-size: contain;
+
+    @media (min-width: variables.$tablet) {
+      width: 23px;
+      height: 21px;
+    }
   }
 }
 
@@ -75,4 +122,9 @@
   line-height: 21px;
   font-weight: 700;
   text-transform: uppercase;
+
+  @media (min-width: variables.$tablet) {
+    font-size: 14px;
+    line-height: 21px;
+  }
 }
