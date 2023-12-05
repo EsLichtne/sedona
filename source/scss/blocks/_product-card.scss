@@ -139,7 +139,9 @@
     display: block;
     width: 23px;
     height: 21px;
-    background-image: url("../img/sprite.svg#like-icon");
+    -webkit-mask-image: url("../img/sprite.svg#like-icon");
+    mask-image: url("../img/sprite.svg#like-icon");
+    background-color: rgba(0, 0, 0, 0.3);
     background-repeat: no-repeat;
     background-size: contain;
 
