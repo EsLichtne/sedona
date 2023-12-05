@@ -3,9 +3,10 @@
 .button {
   display: grid;
   place-content: center;
-  padding: 17px 16px 15px 16px;
-  font-size: 21px;
-  line-height: 26px;
+  padding: min(1.7rem, 25px) min(1.6rem, 24px) min(1.5rem, 22px);
+  font-family: variables.$font-primary;
+  font-size: min(2.1rem, 31px);
+  line-height: min(2.6rem, 39px);
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
@@ -15,15 +16,15 @@
   cursor: pointer;
 
   @media (min-width: variables.$tablet) {
-    padding: 15px 20px 17px;
-    font-size: 21px;
-    line-height: 26px;
+    padding: min(1.5rem) min(2rem) min(1.7rem);
+    font-size: min(2.1rem);
+    line-height: min(2.6rem);
   }
 
   @media (min-width: variables.$desktop) {
-    padding: 15px 20px 17px;
-    font-size: 21px;
-    line-height: 26px;
+    padding: min(1.5rem) min(2rem) min(1.7rem);
+    font-size: min(2.1rem);
+    line-height: min(2.6rem);
   }
 
   &:is(:hover, :focus) {

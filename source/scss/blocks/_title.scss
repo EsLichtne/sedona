@@ -1,42 +1,42 @@
 @use "../common/variables.scss";
 
 .title {
-  font-size: 21px;
-  line-height: 27px;
+  font-size: min(2.1rem, 31px);
+  line-height: min(2.7rem, 40px);
   font-weight: 700;
   text-transform: uppercase;
   text-wrap: balance;
   color: variables.$text-primary;
 
   @media (min-width: variables.$tablet) {
-    font-size: 30px;
-    line-height: 27px;
+    font-size: min(3rem);
+    line-height: min(2.7rem);
   }
 
   @media (min-width: variables.$desktop) {
-    font-size: 30px;
-    line-height: 29px;
+    font-size: min(3rem);
+    line-height: min(2.9rem);
   }
 
   &--primary {
-    font-size: 18px;
+    font-size: min(1.8rem, 27px);
 
     @media (min-width: variables.$tablet) {
-      font-size: 21px;
+      font-size: min(2.1rem);
     }
 
     @media (min-width: variables.$desktop) {
-      font-size: 21px;
+      font-size: min(2.1rem);
     }
   }
 
   &--secondary {
-    font-size: 18px;
-    line-height: 26px;
+    font-size: min(1.8rem, 27px);
+    line-height: min(2.6rem, 39px);
 
     @media (min-width: variables.$tablet) {
-      font-size: 30px;
-      line-height: 26px;
+      font-size: min(3rem);
+      line-height: min(2.6rem);
     }
   }
 }

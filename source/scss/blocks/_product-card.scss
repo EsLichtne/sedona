@@ -153,7 +153,7 @@
 
     @media (min-width: variables.$desktop) {
       margin-bottom: 10px;
-      background-image: url("../img/sprite.svg#like-icon-special");
+      background-color: variables.$text-special;
     }
   }
 

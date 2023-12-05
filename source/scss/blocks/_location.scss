@@ -1,7 +1,8 @@
 @use "../common/variables.scss";
 
 .location {
-  padding-bottom: 8px;
+  padding-bottom: min(.8rem, 12px);
+  background-color: variables.$color-secondary;
 
   @media (min-width: variables.$tablet) {
     padding: 0;

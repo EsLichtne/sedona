@@ -15,13 +15,5 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
-    @media (min-width: variables.$tablet) {
-      height: 57px;
-    }
-
-    @media (min-width: variables.$desktop) {
-      height: 57px;
-    }
   }
 }

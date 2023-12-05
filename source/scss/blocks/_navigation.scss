@@ -2,7 +2,7 @@
 @use "../common/mixins.scss";
 
 .navigation {
-  padding: 17px 20px;
+  padding: min(1.7rem, 25px) min(2rem, 22px);
 
   @media (min-width: variables.$tablet) {
     padding: 0;
@@ -18,9 +18,13 @@
 .navigation__logo {
   position: absolute;
   left: 50%;
-  top: -17px;
+  top: max(-1.7rem, -25px);
   transform: translateX(-50%);
   z-index: 1;
+
+  @media (min-width: variables.$tablet) {
+    top: 0;
+  }
 
   &:is(:hover, :focus) {
     opacity: 0.9;
@@ -29,16 +33,12 @@
   &:active {
     opacity: 0.6;
   }
-
-  @media (min-width: variables.$tablet) {
-    top: 0;
-  }
 }
 
 .navigation__button {
   position: relative;
-  width: 23px;
-  height: 22px;
+  width: min(2.3rem, 34px);
+  height: min(2.2rem, 33px);
   margin-left: auto;
   padding: 0;
   background-color: transparent;
@@ -63,8 +63,8 @@
 .navigation__toggle::before,
 .navigation__toggle::after {
   position: absolute;
-  width: 23px;
-  height: 4px;
+  width: min(2.3rem, 34px);
+  height: min(.4rem, 6px);
   background-color: variables.$color-primary;
   transition: 0.3s;
 }
@@ -76,7 +76,7 @@
 
   &::before {
     content: "";
-    top: 9px;
+    top: min(.9rem, 12px);
     left: 0;
     transition: top 300ms 300ms, transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
   }
@@ -84,7 +84,7 @@
   &::after {
     content: "";
     right: 0;
-    bottom: 9px;
+    bottom: min(.9rem, 12px);
     transition: bottom 300ms 300ms, transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
   }
 }
@@ -121,7 +121,7 @@
     width: 100%;
     background-color: variables.$color-primary;
     z-index: 2;
-    transform: translateY(-226px);
+    transform: translateY(-22.6rem);
     transition: transform 0.5s;
 
 
@@ -154,7 +154,7 @@
     }
 
     &:last-child {
-      box-shadow: 0px -7px 7px -5px rgba(0, 0, 0, 0.2) inset;
+      box-shadow: 0 max(-.7rem, -10.5px) max(.7rem, 10.5px) max(-.5rem, -7.5px) rgba(0, 0, 0, 0.2) inset;
     }
   }
 
@@ -167,26 +167,34 @@
 
 .navigation__link {
   display: block;
-  padding: 18px 0 10px;
-  font-size: 18px;
-  line-height: 26px;
+  padding: min(1.8rem, 27px) 0 min(1rem, 15px);
+  font-size: min(1.8rem, 27px);
+  line-height: min(2.6rem, 39px);
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
   color: variables.$text-special;
 
+  &--current {
+    cursor: default;
+  }
+
   @media (max-width: variables.$mobile) {
-    &:is(:hover, :focus) {
-      background-color: variables.$color-primary-hover;
-    }
+    background-color: variables.$color-primary;
 
-    &:active {
-      background-color: variables.$color-primary-active;
-      color: rgba(255, 255, 255, .3);
-    }
+    &:not(&--current) {
+      &:is(:hover, :focus) {
+        background-color: variables.$color-primary-hover;
+      }
 
-    &:disabled {
-      background-color: variables.$color-primary-disabled;
+      &:active {
+        background-color: variables.$color-primary-active;
+        color: rgba(255, 255, 255, .3);
+      }
+
+      &:disabled {
+        background-color: variables.$color-primary-disabled;
+      }
     }
   }
 
@@ -196,22 +204,18 @@
     line-height: 21px;
     color: variables.$text-primary;
 
-    &:is(:hover, :focus) {
-      color: variables.$text-primary-hover;
-    }
+    &:not(&--current) {
+      &:is(:hover, :focus) {
+        color: variables.$text-primary-hover;
+      }
 
-    &:active {
-      opacity: 0.3;
+      &:active {
+        opacity: 0.3;
+      }
     }
 
     &--current {
       color: variables.$text-primary-current;
-
-      &:is(:hover, :focus, :active) {
-        color: variables.$text-primary-current;
-        opacity: 1;
-        cursor: default;
-      }
     }
   }
 

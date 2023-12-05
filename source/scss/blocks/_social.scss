@@ -4,32 +4,32 @@
 .social {
   @include mixins.list-reset;
   display: flex;
-  gap: 6px;
+  gap: min(.6rem, 9px);
 
   @media (min-width: variables.$tablet) {
-    gap: 6px;
+    gap: min(.6rem);
   }
 
   @media (min-width: variables.$desktop) {
-    gap: 6px;
+    gap: min(.6rem);
   }
 }
 
 .social__link {
   display: grid;
   place-content: center;
-  width: 48px;
-  height: 48px;
+  width: min(4.8rem, 72px);
+  height: min(4.8rem, 72px);
   background-color: variables.$color-primary;
 
   @media (min-width: variables.$tablet) {
-    width: 48px;
-    height: 48px;
+    width: min(4.8rem);
+    height: min(4.8rem);
   }
 
   @media (min-width: variables.$desktop) {
-    width: 48px;
-    height: 48px;
+    width: min(4.8rem);
+    height: min(4.8rem);
   }
 
   &:is(:hover, :focus) {
@@ -42,5 +42,18 @@
     & .social__icon {
       opacity: 0.3;
     }
+  }
+}
+
+.social__icon {
+  width: min(2.4rem, 36px);
+  height: min(2.4rem, 36px);
+
+  @media (min-width: variables.$tablet) {
+    width: min(2.4rem);
+  }
+
+  @media (min-width: variables.$desktop) {
+    height: min(2.4rem);
   }
 }

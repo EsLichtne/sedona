@@ -7,38 +7,38 @@
 .footer__wrapper {
   display: grid;
   justify-content: center;
-  gap: 30px;
-  padding: 33px 0;
+  gap: min(3rem, 45px);
+  padding: min(3.3rem, 49px) 0;
 
   @media (min-width: variables.$tablet) {
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     gap: 0;
-    padding: 36px 60px;
+    padding: min(3.6rem) min(6rem);
   }
 
   @media (min-width: variables.$desktop) {
-    padding: 36px 120px;
+    padding: min(3.6rem) min(12rem);
   }
 }
 
 .footer__hashtag {
   text-align: center;
   margin: 0;
-  font-size: 21px;
-  line-height: 26px;
+  font-size: min(2.1rem, 31px);
+  line-height: min(2.6rem, 39px);
   font-weight: 700;
   text-transform: uppercase;
 
   @media (min-width: variables.$tablet) {
     justify-self: start;
-    font-size: 21px;
-    line-height: 26px;
+    font-size: min(2.1rem);
+    line-height: min(2.6rem);
   }
 
   @media (min-width: variables.$desktop) {
-    font-size: 21px;
-    line-height: 26px;
+    font-size: min(2.1rem);
+    line-height: min(2.6rem);
   }
 }
 

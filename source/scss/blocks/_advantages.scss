@@ -2,54 +2,54 @@
 @use "../common/mixins.scss";
 
 .advantages {
-  padding-top: 32px;
+  padding-top: min(3.2rem, 48px);
   background-color: variables.$color-secondary;
   text-align: center;
 
   @media (min-width: variables.$tablet) {
-    padding-top: 48px;
+    padding-top: min(4.8rem);
   }
 
   @media (min-width: variables.$desktop) {
-    padding-top: 59px;
+    padding-top: min(5.9rem);
   }
 }
 
 .advantages__title {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: min(3.5rem, 52px);
 
   @media (min-width: variables.$tablet) {
-    margin-bottom: 28px;
+    margin-bottom: min(2.8rem);
   }
 
   @media (min-width: variables.$desktop) {
-    margin-bottom: 26px;
+    margin-bottom: min(2.6rem);
   }
 }
 
 .advantages__description {
-  max-width: 284px;
+  max-width: min(28.4rem, 426px);
   margin: 0 auto;
-  margin-bottom: 15px;
+  margin-bottom: min(1.5rem, 22px);
 
   @media (min-width: variables.$tablet) {
-    max-width: 520px;
-    margin-bottom: 55px;
+    max-width: min(52.0rem);
+    margin-bottom: min(5.5rem);
   }
 
   @media (min-width: variables.$desktop) {
-    max-width: 520px;
-    margin-bottom: 42px;
+    max-width: min(52.0rem);
+    margin-bottom: min(4.2rem);
   }
 }
 
 .advantages__wrapper {
-  padding-top: 37px;
+  padding-top: min(3.7rem, 55px);
   background-color: variables.$color-primary;
   background-image: url("../img/sprite.svg#advantages-decor");
   background-repeat: no-repeat;
-  background-size: 100% 37px;
+  background-size: 100% min(3.7rem, 55px);
   background-position: center top;
 
   @media (min-width: variables.$tablet) {

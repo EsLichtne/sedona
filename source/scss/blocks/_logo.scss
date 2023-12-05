@@ -1,16 +1,22 @@
 @use "../common/variables.scss";
 
-.logo__image {
-  width: 186px;
-  height: 96px;
+.logo {
+  width: min(18.6rem, 279px);
+  height: min(9.6rem, 144px);
 
   @media (min-width: variables.$tablet) {
-    width: 186px;
-    height: 96px;
+    width: min(18.6rem);
+    height: min(9.6rem);
   }
 
   @media (min-width: variables.$desktop) {
-    width: 186px;
-    height: 96px;
+    width: min(18.6rem);
+    height: min(9.6rem);
   }
+}
+
+.logo__image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }

@@ -11,30 +11,30 @@
 
     @media (min-width: variables.$tablet) {
       display: grid;
-      grid-template-columns: 256px 1fr;
+      grid-template-columns: min(25.6rem) 1fr;
     }
 
     @media (min-width: variables.$desktop) {
-      grid-template-columns: 400px 1fr;
+      grid-template-columns: min(40.0rem) 1fr;
     }
   }
 
   &:nth-child(even) {
     .card__wrapper {
-      padding: 37px 18px 36px;
+      padding: min(3.7rem, 55px) min(1.8rem, 27px) min(3.6rem, 54px);
 
       @media (min-width: variables.$tablet) {
-        padding: 52px 33px 31px;
+        padding: min(5.2rem) min(3.3rem) min(3.1rem);
       }
 
       @media (min-width: variables.$desktop) {
-        padding: 52px 85px 31px;
+        padding: min(5.2rem) min(8.5rem) min(3.1rem);
       }
     }
 
     @media (min-width: variables.$tablet) {
       display: grid;
-      grid-template-columns: 1fr 256px;
+      grid-template-columns: 1fr min(25.6rem);
 
       & .card__wrapper {
         order: 1;
@@ -42,20 +42,19 @@
     }
 
     @media (min-width: variables.$desktop) {
-      grid-template-columns: 1fr 400px;
+      grid-template-columns: 1fr min(40.0rem);
     }
   }
 
-
   & .card__wrapper {
-    padding: 33px 18px 39px 18px;
+    padding: min(3.3rem, 49px) min(1.8rem, 27px) min(3.9rem, 58px);
 
     @media (min-width: variables.$tablet) {
-      padding: 52px 33px 30px;
+      padding: min(5.2rem) min(3.3rem) min(3.0rem);
     }
 
     @media (min-width: variables.$desktop) {
-      padding: 52px 50px 51px;
+      padding: min(5.2rem) min(5.0rem) min(5.1rem);
     }
   }
 
@@ -70,7 +69,7 @@
   &:not(:last-child)::after {
     content: "";
     display: block;
-    width: calc(100% - 36px);
+    width: calc(100% - min(3.6rem));
     height: 1px;
     margin: 0 auto;
     background-color: #d6d6d6;
@@ -81,48 +80,48 @@
   }
 
   & .card__wrapper {
-    padding: 24px 26px;
+    padding: min(2.4rem, 36px) min(2.6rem, 39px);
 
     @media (min-width: variables.$tablet) {
-      padding: 41px 33px 42px;
+      padding: min(4.1rem) min(3.3rem) min(4.2rem);
     }
 
     @media (min-width: variables.$desktop) {
-      padding: 52px 60px 51px;
+      padding: min(5.2rem) min(6.0rem) min(5.1rem);
     }
   }
 }
 
 .card__title {
   margin: 0;
-  margin-bottom: 17px;
+  margin-bottom: min(1.7rem, 25px);
 
   @media (min-width: variables.$tablet) {
-    max-width: 155px;
+    max-width: min(15.5rem);
     margin: 0 auto;
-    margin-bottom: 23px;
+    margin-bottom: min(2.3rem);
   }
 
   @media (min-width: variables.$desktop) {
-    max-width: 155px;
+    max-width: min(15.5rem);
     margin: 0 auto;
-    margin-bottom: 24px;
+    margin-bottom: min(2.4rem);
   }
 
   &::after {
     content: "— №" counter(number)" —";
     display: block;
-    margin-top: 11px;
-    font-size: 14px;
-    line-height: 21px;
+    margin-top: min(1.1rem, 16px);
+    font-size: min(1.4rem, 21px);
+    line-height: min(2.1rem, 31px);
     font-weight: 400;
 
     @media (min-width: variables.$tablet) {
-      margin-top: 12px;
+      margin-top: min(1.2rem);
     }
 
     @media (min-width: variables.$tablet) {
-      margin-top: 8px;
+      margin-top: min(.8rem);
     }
   }
 }
