@@ -34,4 +34,17 @@
 
 .gallery__list {
   @include mixins.list-reset;
+
+  @media (min-width: variables.$tablet) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.gallery__item {
+  &:nth-child(1) {
+    @media (min-width: variables.$tablet) {
+      grid-column: 1 / -1;
+    }
+  }
 }
