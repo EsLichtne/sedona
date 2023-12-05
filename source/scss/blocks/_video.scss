@@ -48,6 +48,11 @@
     height: 54px;
   }
 
+  @media (min-width: variables.$desktop) {
+    width: 48px;
+    height: 54px;
+  }
+
   &:hover,
   &:focus,
   &:active {
