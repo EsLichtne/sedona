@@ -22,7 +22,6 @@ module.exports = (env) => {
     },
 
     plugins: [
-      isDevelopment ? new webpack.ProgressPlugin() : undefined,
 
       new PugPlugin({
         pretty: true,
