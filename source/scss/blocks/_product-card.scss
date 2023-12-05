@@ -3,7 +3,7 @@
 .product-card {
   position: relative;
   display: grid;
-  padding: 24px 0 25px;
+  padding: 24px 0 26px;
 
   @media (min-width: variables.$tablet) {
     padding: 0;
@@ -154,6 +154,7 @@
 }
 
 .product-card__likes-count {
+  padding-top: 5px;
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
