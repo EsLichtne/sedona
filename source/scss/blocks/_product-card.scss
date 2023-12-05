@@ -9,6 +9,10 @@
     padding: 0;
   }
 
+  @media (min-width: variables.$desktop) {
+    grid-template-rows: auto auto;
+  }
+
   &::before,
   &:last-child::after {
     content: "";
@@ -38,6 +42,11 @@
   @media (min-width: variables.$tablet) {
     margin: 0;
   }
+
+  @media (min-width: variables.$desktop) {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+  }
 }
 
 .product-card__image {
@@ -56,6 +65,13 @@
     padding: 22px 20px 15px;
     background-color: #f2f2f2;
   }
+
+  @media (min-width: variables.$desktop) {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    color: variables.$text-special;
+    background-color: rgba(0, 0, 0, .3);
+  }
 }
 
 .product-card__title {
@@ -68,6 +84,12 @@
 
   @media (min-width: variables.$tablet) {
     grid-column: 1 / 2;
+    margin-bottom: 1px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  @media (min-width: variables.$desktop) {
     margin-bottom: 1px;
     font-size: 14px;
     line-height: 21px;
@@ -88,6 +110,12 @@
     font-size: 14px;
     line-height: 21px;
   }
+
+  @media (min-width: variables.$desktop) {
+    font-size: 14px;
+    line-height: 21px;
+    color: inherit;
+  }
 }
 
 .product-card__likes {
@@ -98,6 +126,10 @@
   @media (min-width: variables.$tablet) {
     grid-column: 2 / 3;
     grid-row: span 2;
+    column-gap: 9px;
+  }
+
+  @media (min-width: variables.$desktop) {
     column-gap: 9px;
   }
 
@@ -114,6 +146,10 @@
       width: 23px;
       height: 21px;
     }
+
+    @media (min-width: variables.$desktop) {
+      background-image: url("../img/sprite.svg#like-icon-special");
+    }
   }
 }
 
@@ -124,6 +160,11 @@
   text-transform: uppercase;
 
   @media (min-width: variables.$tablet) {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  @media (min-width: variables.$desktop) {
     font-size: 14px;
     line-height: 21px;
   }
