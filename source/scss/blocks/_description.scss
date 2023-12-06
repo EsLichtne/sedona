@@ -7,12 +7,12 @@
   color: variables.$text-secondary;
 
   @media (min-width: variables.$tablet) {
-    font-size: min(1.4rem);
-    line-height: min(2.1rem);
+    font-size: min(1.4rem, 18px);
+    line-height: min(2.1rem, 27px);
   }
 
   @media (min-width: variables.$desktop) {
-    font-size: min(1.4rem);
-    line-height: min(2.1rem);
+    font-size: min(1.4rem, 21px);
+    line-height: min(2.1rem, 31px);
   }
 }

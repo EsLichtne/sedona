@@ -27,14 +27,14 @@
   text-align: left;
 
   @media (min-width: variables.$tablet) {
-    row-gap: min(2.2rem);
-    padding: min(3.6rem) min(3.7rem) min(6rem);
+    row-gap: min(2.2rem, 28px);
+    padding: min(3.6rem, 46px) min(3.7rem, 47px) min(6rem, 76px);
     text-align: center;
   }
 
   @media (min-width: variables.$desktop) {
-    row-gap: min(2.3rem);
-    padding: min(4.4rem) min(5rem) min(6.9rem);
+    row-gap: min(2.3rem, 34px);
+    padding: min(4.4rem, 66px) min(5rem, 75px) min(6.9rem, 103px);
   }
 
   &::before {
@@ -49,14 +49,14 @@
     @media (min-width: variables.$tablet) {
       grid-column: 1 / -1;
       grid-row: 1 / 2;
-      width: min(10rem);
-      height: min(10rem);
+      width: min(10rem, 125px);
+      height: min(10rem, 125px);
       margin: 0 auto;
     }
 
     @media (min-width: variables.$desktop) {
-      width: min(10rem);
-      height: min(10rem);
+      width: min(10rem, 150px);
+      height: min(10rem, 150px);
     }
   }
 

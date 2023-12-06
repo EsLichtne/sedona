@@ -9,24 +9,24 @@
   color: variables.$text-primary;
 
   @media (min-width: variables.$tablet) {
-    font-size: min(3rem);
-    line-height: min(2.7rem);
+    font-size: min(3rem, 38px);
+    line-height: min(2.7rem, 34px);
   }
 
   @media (min-width: variables.$desktop) {
-    font-size: min(3rem);
-    line-height: min(2.9rem);
+    font-size: min(3rem, 45px);
+    line-height: min(2.9rem, 43px);
   }
 
   &--primary {
     font-size: min(1.8rem, 27px);
 
     @media (min-width: variables.$tablet) {
-      font-size: min(2.1rem);
+      font-size: min(2.1rem, 27px);
     }
 
     @media (min-width: variables.$desktop) {
-      font-size: min(2.1rem);
+      font-size: min(2.1rem, 31px);
     }
   }
 
@@ -35,8 +35,13 @@
     line-height: min(2.6rem, 39px);
 
     @media (min-width: variables.$tablet) {
-      font-size: min(3rem);
-      line-height: min(2.6rem);
+      font-size: min(3rem, 38px);
+      line-height: min(2.6rem, 33px);
+    }
+
+    @media (min-width: variables.$desktop) {
+      font-size: min(3rem, 45px);
+      line-height: min(2.6rem, 39px);
     }
   }
 }

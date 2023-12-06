@@ -7,11 +7,11 @@
   text-align: center;
 
   @media (min-width: variables.$tablet) {
-    padding-top: min(4.8rem);
+    padding-top: min(4.8rem, 61px);
   }
 
   @media (min-width: variables.$desktop) {
-    padding-top: min(5.9rem);
+    padding-top: min(5.9rem, 88px);
   }
 }
 
@@ -20,11 +20,11 @@
   margin-bottom: min(3.5rem, 52px);
 
   @media (min-width: variables.$tablet) {
-    margin-bottom: min(2.8rem);
+    margin-bottom: min(2.8rem, 36px);
   }
 
   @media (min-width: variables.$desktop) {
-    margin-bottom: min(2.6rem);
+    margin-bottom: min(2.6rem, 39px);
   }
 }
 
@@ -34,13 +34,13 @@
   margin-bottom: min(1.5rem, 22px);
 
   @media (min-width: variables.$tablet) {
-    max-width: min(52.0rem);
-    margin-bottom: min(5.5rem);
+    max-width: min(52rem, 663px);
+    margin-bottom: min(5.5rem, 70px);
   }
 
   @media (min-width: variables.$desktop) {
-    max-width: min(52.0rem);
-    margin-bottom: min(4.2rem);
+    max-width: min(52rem, 780px);
+    margin-bottom: min(4.2rem, 63px);
   }
 }
 

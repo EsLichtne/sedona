@@ -7,11 +7,11 @@
   gap: min(.6rem, 9px);
 
   @media (min-width: variables.$tablet) {
-    gap: min(.6rem);
+    gap: min(.6rem, 8px);
   }
 
   @media (min-width: variables.$desktop) {
-    gap: min(.6rem);
+    gap: min(.6rem, 9px);
   }
 }
 
@@ -23,13 +23,13 @@
   background-color: variables.$color-primary;
 
   @media (min-width: variables.$tablet) {
-    width: min(4.8rem);
-    height: min(4.8rem);
+    width: min(4.8rem, 61px);
+    height: min(4.8rem, 61px);
   }
 
   @media (min-width: variables.$desktop) {
-    width: min(4.8rem);
-    height: min(4.8rem);
+    width: min(4.8rem, 72px);
+    height: min(4.8rem, 72px);
   }
 
   &:is(:hover, :focus) {
@@ -50,10 +50,12 @@
   height: min(2.4rem, 36px);
 
   @media (min-width: variables.$tablet) {
-    width: min(2.4rem);
+    width: min(2.4rem, 31px);
+    height: min(2.4rem, 31px);
   }
 
   @media (min-width: variables.$desktop) {
-    height: min(2.4rem);
+    width: min(2.4rem, 36px);
+    height: min(2.4rem, 36px);
   }
 }

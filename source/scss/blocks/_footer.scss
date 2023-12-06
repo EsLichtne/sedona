@@ -14,11 +14,11 @@
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     gap: 0;
-    padding: min(3.6rem) min(6rem);
+    padding: min(3.6rem, 46px) min(6rem, 76px);
   }
 
   @media (min-width: variables.$desktop) {
-    padding: min(3.6rem) min(12rem);
+    padding: min(3.6rem, 54px) min(12rem, 180px);
   }
 }
 
@@ -32,13 +32,13 @@
 
   @media (min-width: variables.$tablet) {
     justify-self: start;
-    font-size: min(2.1rem);
-    line-height: min(2.6rem);
+    font-size: min(2.1rem, 27px);
+    line-height: min(2.6rem, 33px);
   }
 
   @media (min-width: variables.$desktop) {
-    font-size: min(2.1rem);
-    line-height: min(2.6rem);
+    font-size: min(2.1rem, 31px);
+    line-height: min(2.6rem, 39px);
   }
 }
 

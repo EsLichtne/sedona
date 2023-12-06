@@ -6,11 +6,11 @@
   background-color: variables.$color-secondary;
 
   @media (min-width: variables.$tablet) {
-    padding: min(5.9rem) min(15.5rem) min(5.5rem);
+    padding: min(5.9rem, 75px) min(15.5rem, 198px) min(5.5rem, 70px);
   }
 
   @media (min-width: variables.$desktop) {
-    padding: min(6rem) min(37.1rem) min(6.6rem);
+    padding: min(6rem, 90px) min(37.1rem, 556px) min(6.6rem, 99px);
   }
 }
 
@@ -19,11 +19,11 @@
   margin-bottom: min(2rem, 30px);
 
   @media (min-width: variables.$tablet) {
-    margin-bottom: min(3.2rem);
+    margin-bottom: min(3.2rem, 41px);
   }
 
   @media (min-width: variables.$desktop) {
-    margin-bottom: min(3.2rem);
+    margin-bottom: min(3.2rem, 48px);
   }
 }
 
@@ -32,11 +32,11 @@
   margin-bottom: min(3.2rem, 48px);
 
   @media (min-width: variables.$tablet) {
-    margin-bottom: min(4.5rem);
+    margin-bottom: min(4.5rem, 57px);
   }
 
   @media (min-width: variables.$desktop) {
-    margin-bottom: min(4.4rem);
+    margin-bottom: min(4.4rem, 66px);
   }
 
   br {

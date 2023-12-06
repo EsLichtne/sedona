@@ -11,16 +11,16 @@
   background-size: cover;
 
   @media (min-width: variables.$tablet) {
-    min-height: min(51.8rem);
-    padding-top: min(7.7rem);
-    padding-bottom: min(9rem);
+    min-height: min(51.8rem, 661px);
+    padding-top: min(7.7rem, 98px);
+    padding-bottom: min(9rem, 115px);
     background-image: url("../img/hero-tablet.jpg");
   }
 
   @media (min-width: variables.$desktop) {
-    min-height: min(51.8rem);
-    padding-top: min(7.8rem);
-    padding-bottom: min(9rem);
+    min-height: min(51.8rem, 777px);
+    padding-top: min(7.8rem, 117px);
+    padding-bottom: min(9rem, 135px);
     background-image: url("../img/hero-desktop.jpg");
   }
 }
@@ -32,12 +32,12 @@
   margin: 0 auto;
 
   @media (min-width: variables.$tablet) {
-    width: min(46rem);
-    height: min(35rem);
+    width: min(46rem, 587px);
+    height: min(35rem, 447px);
   }
 
   @media (min-width: variables.$desktop) {
-    width: min(46rem);
-    height: min(35rem);
+    width: min(46rem, 690px);
+    height: min(35rem, 525px);
   }
 }

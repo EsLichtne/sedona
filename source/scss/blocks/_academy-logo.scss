@@ -9,11 +9,11 @@
   color: variables.$text-primary;
 
   @media (min-width: variables.$tablet) {
-    gap: min(1.2rem);
+    gap: min(1.2rem, 15px);
   }
 
   @media (min-width: variables.$desktop) {
-    gap: min(1.2rem);
+    gap: min(1.2rem, 18px);
 
   }
 
@@ -32,13 +32,13 @@
   text-transform: uppercase;
 
   @media (min-width: variables.$tablet) {
-    font-size: min(1.4rem);
-    line-height: min(2.1rem);
+    font-size: min(1.4rem, 18px);
+    line-height: min(2.1rem, 27px);
   }
 
   @media (min-width: variables.$desktop) {
-    font-size: min(1.4rem);
-    line-height: min(2.1rem);
+    font-size: min(1.4rem, 21px);
+    line-height: min(2.1rem, 31px);
   }
 }
 
@@ -47,12 +47,12 @@
   height: min(3.4rem, 51px);
 
   @media (min-width: variables.$tablet) {
-    width: min(2.7rem);
-    height: min(3.4rem);
+    width: min(2.7rem, 34px);
+    height: min(3.4rem, 43px);
   }
 
   @media (min-width: variables.$desktop) {
-    width: min(2.7rem);
-    height: min(3.4rem);
+    width: min(2.7rem, 40px);
+    height: min(3.4rem, 51px);
   }
 }

@@ -133,11 +133,7 @@
 
   @media (min-width: variables.$tablet) {
     display: grid;
-    grid-template-columns: repeat(5, 153px);
-  }
-
-  @media (min-width: variables.$desktop) {
-    grid-template-columns: repeat(5, 240px);
+    grid-template-columns: repeat(5, 1fr);
   }
 }
 
@@ -199,9 +195,9 @@
   }
 
   @media (min-width: variables.$tablet) {
-    padding: 18px 0 17px;
-    font-size: 14px;
-    line-height: 21px;
+    padding: min(1.8rem, 23px) 0 min(1.7rem, 22px);
+    font-size: min(1.4rem, 18px);
+    line-height: min(2.1rem, 27px);
     color: variables.$text-primary;
 
     &:not(&--current) {
@@ -220,8 +216,8 @@
   }
 
   @media (min-width: variables.$desktop) {
-    padding: 18px 0 17px;
-    font-size: 14px;
-    line-height: 21px;
+    padding: min(1.8rem, 27px) 0 min(1.7rem, 25px);
+    font-size: min(1.4rem, 21px);
+    line-height: min(2.1rem, 31px);
   }
 }

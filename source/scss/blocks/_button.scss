@@ -16,15 +16,15 @@
   cursor: pointer;
 
   @media (min-width: variables.$tablet) {
-    padding: min(1.5rem) min(2rem) min(1.7rem);
-    font-size: min(2.1rem);
-    line-height: min(2.6rem);
+    padding: min(1.5rem, 19px) min(2rem, 25px) min(1.7rem, 22px);
+    font-size: min(2.1rem, 27px);
+    line-height: min(2.6rem, 33px);
   }
 
   @media (min-width: variables.$desktop) {
-    padding: min(1.5rem) min(2rem) min(1.7rem);
-    font-size: min(2.1rem);
-    line-height: min(2.6rem);
+    padding: min(1.5rem, 22px) min(2rem, 30px) min(1.7rem, 25px);
+    font-size: min(2.1rem, 31px);
+    line-height: min(2.6rem, 39px);
   }
 
   &:is(:hover, :focus) {

@@ -5,13 +5,13 @@
   height: min(9.6rem, 144px);
 
   @media (min-width: variables.$tablet) {
-    width: min(18.6rem);
-    height: min(9.6rem);
+    width: min(18.6rem, 237px);
+    height: min(9.6rem, 122px);
   }
 
   @media (min-width: variables.$desktop) {
-    width: min(18.6rem);
-    height: min(9.6rem);
+    width: min(18.6rem, 248px);
+    height: min(9.6rem, 128px);
   }
 }
 
