@@ -1,39 +1,39 @@
 @use "../common/variables.scss";
 
 .gallery-lead {
-  padding: 52px 0 67px;
+  padding: min(5.2rem, 78px) 0 min(6.7rem, 100px);
   background-color: variables.$color-secondary;
   background-image: url("../img/hero-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center -231px;
+  background-position: center -23.1rem;
 
   @media (min-width: variables.$tablet) {
-    padding: 95px 0 118px;
+    padding: min(9.5rem, 121px) 0 min(11.8rem, 150px);
     background-image: url("../img/hero-tablet.jpg");
-    background-position: center -228px;
+    background-position: center -22.8rem;
   }
 
   @media (min-width: variables.$desktop) {
-    padding: 101px 0 120px;
+    padding: min(10.1rem, 151px) 0 min(12rem, 180px);
     background-image: url("../img/hero-desktop.jpg");
-    background-position: center -217px;
+    background-position: center -21.7rem;
   }
 }
 
 .gallery-lead__image {
   display: block;
-  width: 229px;
-  height: 39px;
+  width: min(22.9rem, 343px);
+  height: min(3.9rem, 58px);
   margin: 0 auto;
 
   @media (min-width: variables.$tablet) {
-    width: 457px;
-    height: 77px;
+    width: min(45.7rem, 583px);
+    height: min(7.7rem, 98px);
   }
 
   @media (min-width: variables.$desktop) {
-    width: 460px;
-    height: 80px;
+    width: min(46rem, 690px);
+    height: min(8rem, 120px);
   }
 }

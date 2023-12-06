@@ -2,46 +2,46 @@
 @use "../common/mixins.scss";
 
 .gallery {
-  padding: 37px 20px 0;
+  padding: min(3.7rem, 55px) min(2rem, 30px) 0;
   background-color: variables.$color-secondary;
 
   @media (min-width: variables.$tablet) {
-    padding: 66px 60px 29px;
+    padding: min(6.6rem, 84px) min(6rem, 76px) min(2.9rem, 37px);
   }
 
   @media (min-width: variables.$desktop) {
-    padding: 100px 0 31px;
+    padding: min(10rem, 150px) 0 min(3.1rem, 46px);
   }
 }
 
 .gallery__title {
   margin: 0;
-  margin-bottom: 26px;
+  margin-bottom: min(2.6rem, 39px);
   text-align: center;
 
   @media (min-width: variables.$tablet) {
-    margin-bottom: 32px;
+    margin-bottom: min(3.2rem, 41px);
   }
 
   @media (min-width: variables.$desktop) {
-    margin-bottom: 32px;
+    margin-bottom: min(3.2rem, 48px);
   }
 }
 
 .gallery__description {
   margin: 0;
-  margin-bottom: 37px;
+  margin-bottom: min(3.7rem, 55px);
   text-align: center;
 
   @media (min-width: variables.$tablet) {
-    max-width: 445px;
+    max-width: min(44.5rem, 568px);
     margin: 0 auto;
-    margin-bottom: 81px;
+    margin-bottom: min(8.1rem, 103px);
   }
 
   @media (min-width: variables.$desktop) {
-    max-width: 440px;
-    margin-bottom: 87px;
+    max-width: min(44rem, 660px);
+    margin-bottom: min(8.7rem, 130px);
   }
 }
 

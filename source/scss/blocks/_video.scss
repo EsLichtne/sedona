@@ -31,8 +31,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 48px;
-  height: 54px;
+  width: min(4.8rem, 72px);
+  height: min(5.4rem, 81px);
   padding: 0;
   background-color: transparent;
   background-image: url("../img/sprite.svg#play-button");
@@ -44,13 +44,13 @@
   transition: transform 0.5s;
 
   @media (min-width: variables.$tablet) {
-    width: 48px;
-    height: 54px;
+    width: min(4.8rem, 61px);
+    height: min(5.4rem, 69px);
   }
 
   @media (min-width: variables.$desktop) {
-    width: 48px;
-    height: 54px;
+    width: min(4.8rem, 72px);
+    height: min(5.4rem, 81px);
   }
 
   &:hover,

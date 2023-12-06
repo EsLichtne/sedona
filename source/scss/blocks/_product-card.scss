@@ -3,7 +3,7 @@
 .product-card {
   position: relative;
   display: grid;
-  padding: 24px 0 26px;
+  padding: min(2.4rem, 36px) 0 min(2.6rem, 39px);
 
   @media (min-width: variables.$tablet) {
     padding: 0;
@@ -17,8 +17,8 @@
   &:last-child::after {
     content: "";
     position: absolute;
-    left: -20px;
-    width: calc(100% + 40px);
+    left: -2rem;
+    width: calc(100% + 4rem);
     height: 1px;
     background-color: #e5e5e5;
 
@@ -37,7 +37,7 @@
 }
 
 .product-card__image-wrapper {
-  margin-bottom: 15px;
+  margin-bottom: min(1.5rem, 22px);
 
   @media (min-width: variables.$tablet) {
     margin: 0;
@@ -51,9 +51,10 @@
 
 .product-card__image {
   display: block;
+  width: 100%;
   max-width: 100%;
   height: auto;
-  object-fit: scale-down;
+  object-fit: contain;
 }
 
 .product-card__content-wrapper {
@@ -62,14 +63,14 @@
     grid-template-columns: 1fr auto;
     grid-auto-flow: dense;
     align-items: center;
-    padding: 22px 20px 15px;
+    padding: min(2.2rem, 28px) min(2rem, 25px) min(1.5rem, 19px);
     background-color: #f2f2f2;
   }
 
   @media (min-width: variables.$desktop) {
     grid-column: 1 / -1;
     grid-row: 2 / 3;
-    padding: 19px 21px 18px 25px;
+    padding: min(1.9rem, 28px) min(2.1rem, 31px) min(1.8rem, 27px) min(2.5rem, 37px);
     color: variables.$text-special;
     background-color: rgba(0, 0, 0, .3);
   }
@@ -77,68 +78,68 @@
 
 .product-card__title {
   margin: 0;
-  margin-bottom: 1px;
-  font-size: 14px;
-  line-height: 21px;
+  margin-bottom: min(.1rem, 2px);
+  font-size: min(1.4rem, 21px);
+  line-height: min(2.1rem, 31px);
   font-weight: 700;
   text-transform: uppercase;
 
   @media (min-width: variables.$tablet) {
     grid-column: 1 / 2;
-    margin-bottom: 1px;
-    font-size: 14px;
-    line-height: 21px;
+    margin-bottom: min(.1rem, 2px);
+    font-size: min(1.4rem, 18px);
+    line-height: min(2.1rem, 27px);
   }
 
   @media (min-width: variables.$desktop) {
-    margin-bottom: 1px;
-    font-size: 14px;
-    line-height: 21px;
+    margin-bottom: min(.1rem, 2px);
+    font-size: min(1.4rem, 21px);
+    line-height: min(2.1rem, 31px);
   }
 }
 
 .product-card__author {
   margin: 0;
-  margin-bottom: 11px;
-  font-size: 14px;
-  line-height: 21px;
+  margin-bottom: min(1.1rem, 16px);
+  font-size: min(1.4rem, 21px);
+  line-height: min(2.1rem, 31px);
   font-weight: 400;
   color: variables.$text-secondary;
 
   @media (min-width: variables.$tablet) {
     grid-column: 1 / 2;
     margin: 0;
-    font-size: 14px;
-    line-height: 21px;
+    font-size: min(1.4rem, 18px);
+    line-height: min(2.1rem, 27px);
   }
 
   @media (min-width: variables.$desktop) {
-    font-size: 14px;
-    line-height: 21px;
+    font-size: min(1.4rem, 21px);
+    line-height: min(2.1rem, 31px);
     color: inherit;
   }
 }
 
 .product-card__likes {
   display: flex;
-  column-gap: 14px;
+  column-gap: min(1.4rem, 21px);
   margin: 0;
 
   @media (min-width: variables.$tablet) {
     grid-column: 2 / 3;
     grid-row: span 2;
-    column-gap: 9px;
+    column-gap: min(.9rem, 11px);
   }
 
   @media (min-width: variables.$desktop) {
-    column-gap: 9px;
+    column-gap: min(.9rem, 13px);
   }
 
   &::before {
     content: "";
     display: block;
-    width: 23px;
-    height: 21px;
+    width: min(2.3rem, 34px);
+    height: min(2.1rem, 31px);
     -webkit-mask-image: url("../img/sprite.svg#like-icon");
     mask-image: url("../img/sprite.svg#like-icon");
     background-color: rgba(0, 0, 0, 0.3);
@@ -146,13 +147,15 @@
     background-size: contain;
 
     @media (min-width: variables.$tablet) {
-      width: 23px;
-      height: 21px;
-      margin-bottom: 10px;
+      width: min(2.3rem, 29px);
+      height: min(2.1rem, 27px);
+      margin-bottom: min(1rem, 13px);
     }
 
     @media (min-width: variables.$desktop) {
-      margin-bottom: 10px;
+      width: min(2.3rem, 34px);
+      height: min(2.1rem, 31px);
+      margin-bottom: min(1rem, 15px);
       background-color: variables.$text-special;
     }
   }
@@ -160,39 +163,40 @@
   &:not(:first-child) {
     &::before {
       @media (min-width: variables.$desktop) {
-        margin-bottom: 5px;
+        margin-bottom: min(.5rem, 7px);
       }
     }
   }
 }
 
 .product-card__likes-count {
-  padding-top: 5px;
-  font-size: 14px;
-  line-height: 21px;
+  padding-top: min(.5rem, 7px);
+  font-size: min(1.4rem, 21px);
+  line-height: min(2.1rem, 31px);
   font-weight: 700;
   text-transform: uppercase;
 
   @media (min-width: variables.$tablet) {
-    padding-top: 5px;
-    font-size: 14px;
-    line-height: 21px;
+    padding-top: min(.5rem, 6px);
+    font-size: min(1.4rem, 18px);
+    line-height: min(2.1rem, 27px);
   }
 
   @media (min-width: variables.$desktop) {
-    font-size: 14px;
-    line-height: 21px;
+    padding-top: min(.5rem, 7px);
+    font-size: min(1.4rem, 21px);
+    line-height: min(2.1rem, 31px);
   }
 }
 
 .product-card:first-child {
   @media (min-width: variables.$desktop) {
     & .product-card__content-wrapper {
-      padding: 22px 20px 15px;
+      padding: min(2.2rem, 33px) min(2rem, 30px) min(1.5rem, 22px);
     }
 
     & .product-card__likes::before {
-      margin-bottom: 10px;
+      margin-bottom: min(1rem, 15px);
     }
   }
 }
