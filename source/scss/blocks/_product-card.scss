@@ -76,6 +76,10 @@
   }
 }
 
+.product-card:nth-child(2n + 1):not(:first-child) .product-card__content-wrapper {
+  background-color: #eaeaea;
+}
+
 .product-card__title {
   margin: 0;
   margin-bottom: min(.1rem, 2px);
