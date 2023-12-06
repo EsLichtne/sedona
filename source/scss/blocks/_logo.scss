@@ -14,12 +14,9 @@
     height: min(9.6rem, 128px);
   }
 
-  &:is(:hover, :focus) .logo__image {
-    opacity: 0.9;
-  }
-
-  &:active {
-    opacity: 0.6;
+  &:is(:hover, :focus, :active) .logo__image {
+    filter: drop-shadow(0px 5px 15px #000000);
+    transition: filter 0.5s;
   }
 }
 
@@ -27,4 +24,5 @@
   width: 100%;
   max-width: 100%;
   height: auto;
+  transition: filter 0.5s;
 }
