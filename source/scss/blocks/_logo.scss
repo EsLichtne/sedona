@@ -13,6 +13,14 @@
     width: min(18.6rem, 248px);
     height: min(9.6rem, 128px);
   }
+
+  &:is(:hover, :focus) .logo__image {
+    opacity: 0.9;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .logo__image {

@@ -25,14 +25,6 @@
   @media (min-width: variables.$tablet) {
     top: 0;
   }
-
-  &:is(:hover, :focus) {
-    opacity: 0.9;
-  }
-
-  &:active {
-    opacity: 0.6;
-  }
 }
 
 .navigation__button {
