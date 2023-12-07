@@ -1,0 +1,18 @@
+@use "../common/variables.scss";
+
+.input {
+  &:is([type="tel"], [type="email"]) {
+    background-image:
+      url("../img/sprite.svg#phone"),
+      linear-gradient(270deg, variables.$color-field-secondary 58px, variables.$color-field-primary 58px);
+    background-repeat: no-repeat;
+    background-size: 18px 18px, 100%;
+    background-position: right 20px top 20px, center;
+  }
+
+  &[type="email"] {
+    background-image:
+      url("../img/sprite.svg#email"),
+      linear-gradient(270deg, variables.$color-field-secondary 58px, variables.$color-field-primary 58px);
+  }
+}

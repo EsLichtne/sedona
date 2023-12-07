@@ -1,0 +1,8 @@
+@use "../common/variables.scss";
+
+.footnote__text {
+  font-size: 12px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: rgba(51, 51, 51, .6);
+}

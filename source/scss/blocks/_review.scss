@@ -1,0 +1,17 @@
+@use "../common/variables.scss";
+
+.review {
+  padding: 37px 20px 22px;
+  text-align: center;
+  background-color: variables.$color-secondary;
+}
+
+.review__title {
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.review__description {
+  margin: 0;
+  margin-bottom: 27px;
+}

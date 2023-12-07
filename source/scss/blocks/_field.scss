@@ -1,0 +1,25 @@
+@use "../common/variables.scss";
+
+.field {
+  padding: 16px;
+  font-family: variables.$font-primary;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: variables.$text-primary;
+  background-color: variables.$color-field-primary;
+  border: none;
+
+  &::placeholder {
+    color: rgba(0, 0, 0, .3);
+  }
+
+  &:is(:hover, :focus) {
+    background-color: variables.$color-field-hover;
+  }
+
+  &:active {
+    background-color: variables.$color-secondary;
+    outline: 4px solid variables.$color-field-hover;
+  }
+}

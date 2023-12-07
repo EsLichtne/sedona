@@ -1,0 +1,22 @@
+@use "../common/variables.scss";
+
+.radio-input {
+  display: grid;
+  place-content: center;
+  appearance: none;
+  width: 46px;
+  height: 46px;
+  margin: 0;
+  padding: 0;
+  background-color: variables.$color-field-primary;
+  border-radius: 50%;
+
+  &:checked::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: variables.$text-secondary;
+  }
+}
