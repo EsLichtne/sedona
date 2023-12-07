@@ -1,6 +1,6 @@
 @use "../common/variables.scss";
 
-.gallery-lead {
+.lead {
   padding: min(5.2rem, 78px) 0 min(6.7rem, 100px);
   background-color: variables.$color-secondary;
   background-image: url("../img/hero-mobile.jpg");
@@ -21,7 +21,7 @@
   }
 }
 
-.gallery-lead__image {
+.lead__image {
   display: block;
   width: min(22.9rem, 343px);
   height: min(3.9rem, 58px);
