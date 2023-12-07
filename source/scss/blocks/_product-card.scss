@@ -164,16 +164,8 @@
     @media (min-width: variables.$desktop) {
       width: min(2.3rem, 34px);
       height: min(2.1rem, 31px);
-      margin-bottom: min(1rem, 15px);
+      margin-bottom: min(.5rem, 7px);
       background-color: variables.$text-special;
-    }
-  }
-
-  &:not(:first-child) {
-    &::before {
-      @media (min-width: variables.$desktop) {
-        margin-bottom: min(.5rem, 7px);
-      }
     }
   }
 }
