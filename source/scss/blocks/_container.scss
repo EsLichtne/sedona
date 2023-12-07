@@ -3,6 +3,7 @@
 .container {
   @media (min-width: variables.$desktop) {
     width: calc(100% - 80px);
+    max-width: 2145px;
     margin: 0 auto;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   }
