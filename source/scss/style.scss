@@ -25,8 +25,17 @@
 @use "blocks/location";
 @use "blocks/services";
 //Gallery
-@use "blocks/gallery-lead";
+@use "blocks/lead";
 @use "blocks/gallery";
 @use "blocks/presentation";
 @use "blocks/product-card";
 @use "blocks/video";
+//Form
+@use "blocks/checkbox-input";
+@use "blocks/field";
+@use "blocks/footnote";
+@use "blocks/form";
+@use "blocks/input";
+@use "blocks/radio-input";
+@use "blocks/review";
+@use "blocks/textarea";
