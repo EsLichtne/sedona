@@ -1,5 +1,4 @@
 include blocks/blocks.pug
-include blocks/libs/libs.pug
 
 doctype html
 html.page(lang='ru')
@@ -11,3 +10,5 @@ html.page(lang='ru')
         block content
       block footer
         +footer
+    +message(error)
+    +message(success)
