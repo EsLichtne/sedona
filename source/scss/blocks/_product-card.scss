@@ -1,6 +1,9 @@
 @use "../common/variables.scss";
 
 .product-card {
+  container-name: product-card;
+  container-type: inline-size;
+
   position: relative;
   display: grid;
   padding: min(2.4rem, 36px) 0 min(2.6rem, 39px);
@@ -193,13 +196,13 @@
   }
 }
 
-.product-card:first-child {
+@container product-card (width > 800px) {
   @media (min-width: variables.$desktop) {
-    & .product-card__content-wrapper {
+    .product-card__content-wrapper {
       padding: min(2.2rem, 33px) min(2rem, 30px) min(1.5rem, 22px);
     }
 
-    & .product-card__likes::before {
+    .product-card__likes::before {
       margin-bottom: min(1rem, 15px);
     }
   }
