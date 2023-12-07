@@ -198,7 +198,7 @@
   }
 }
 
-@container product-card (width > 800px) {
+@container product-card (inline-size > 800px) {
   @media (min-width: variables.$desktop) {
     .product-card__content-wrapper {
       padding: min(2.2rem, 33px) min(2rem, 30px) min(1.5rem, 22px);
