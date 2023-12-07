@@ -1,0 +1,65 @@
+@use "../common/variables.scss";
+
+.message {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.message__wrapper {
+  position: relative;
+  width: 320px;
+  margin-top: 116px;
+  text-align: center;
+  color: variables.$text-primary;
+  background-color: variables.$color-secondary;
+}
+
+.message__title {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.message__text {
+  margin: 0;
+}
+
+.message__button {
+  width: 100%;
+  font-size: 18px;
+}
+
+.message--error {
+  & .message__wrapper {
+    padding: 45px 42px 0;
+  }
+
+  & .message__text {
+    margin-bottom: 14px;
+  }
+
+  & .message__footer {
+    padding: 14px 28px 35px;
+  }
+}
+
+.message--success {
+  & .message__wrapper {
+    padding: 39px 38px 0;
+  }
+
+  & .message__text {
+    margin-bottom: 51px;
+  }
+
+  & .message__footer {
+    width: calc(100% + 76px);
+    margin-left: -38px;
+    padding: 20px;
+    background-color: #f2f2f2;
+  }
+}
