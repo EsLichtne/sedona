@@ -4,12 +4,14 @@
   "description": "Личный проект «Седона»",
   "scripts": {
     "start": "webpack --env mode=development && webpack serve --env mode=development",
-    "build": "webpack --env mode=production"
+    "build": "webpack --env mode=production",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.16",
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.8.1",
+    "gh-pages": "^6.1.0",
     "postcss-loader": "^7.3.3",
     "pug-plugin": "^4.9.9",
     "sass": "^1.69.0",
