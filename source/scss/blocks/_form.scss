@@ -11,65 +11,65 @@
 .form__fieldset {
   position: relative;
   margin: 0;
-  padding: 25px 0;
+  padding: min(2.5rem, 37px) 0;
   border: none;
 
   &:nth-child(1) {
-    padding-bottom: 40px;
+    padding-bottom: min(4rem, 37px);
 
     @media (min-width: variables.$tablet) {
       grid-column: 1 / 2;
-      margin-bottom: 63px;
+      margin-bottom: min(6.3rem, 80px);
       padding: 0;
-      padding-right: 28px;
+      padding-right: min(2.8rem, 36px);
       border-right: 1px solid #dbdbdb;
     }
 
     @media (min-width: variables.$desktop) {
-      margin-bottom: 71px;
-      padding-right: 49px;
+      margin-bottom: min(7.1rem, 106px);
+      padding-right: min(4.9rem, 73px);
     }
   }
 
   &:nth-child(2) {
-    padding-bottom: 34px;
+    padding-bottom: min(3.4rem, 51px);
 
     @media (min-width: variables.$tablet) {
       grid-column: 2 / 3;
       padding: 0;
-      padding-left: 28px;
+      padding-left: min(2.8rem, 36px);
     }
 
     @media (min-width: variables.$desktop) {
-      padding-left: 49px;
+      padding-left: min(4.9rem, 73px);
     }
   }
 
   &:nth-child(3) {
-    padding-bottom: 23px;
+    padding-bottom: min(2.3rem, 34px);
 
     @media (min-width: variables.$tablet) {
       grid-column: 1 / -1;
-      margin-bottom: 48px;
+      margin-bottom: min(4.8rem, 61px);
       padding: 0;
     }
 
     @media (min-width: variables.$desktop) {
-      margin-bottom: 54px;
+      margin-bottom: min(5.4rem, 81px);
     }
   }
 
   &:nth-child(4) {
-    padding-bottom: 24px;
+    padding-bottom: min(2.4rem, 36px);
 
     @media (min-width: variables.$tablet) {
       grid-column: 1 / -1;
-      margin-bottom: 42px;
+      margin-bottom: min(4.2rem, 53px);
       padding: 0;
     }
 
     @media (min-width: variables.$desktop) {
-      margin-bottom: 58px;
+      margin-bottom: min(5.8rem, 87px);
     }
   }
 
@@ -80,7 +80,7 @@
     }
 
     @media (min-width: variables.$desktop) {
-      padding: 0 96px;
+      padding: 0 min(9.6rem, 144px);
     }
   }
 
@@ -100,28 +100,30 @@
 }
 
 .form__legend-wrapper {
+  margin-bottom: min(2rem, 30px);
+
   @media (min-width: variables.$tablet) {
-    margin-bottom: 28px;
+    margin-bottom: min(2.8rem, 36px);
   }
 
   @media (min-width: variables.$desktop) {
-    margin-bottom: 28px;
+    margin-bottom: min(2.8rem, 42px);
   }
 }
 
 .form__legend {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: min(2rem, 30px);
 
   @media (min-width: variables.$tablet) {
     min-width: fit-content;
-    margin-bottom: 28px;
-    font-size: 21px;
+    margin-bottom: min(2.8rem, 36px);
+    font-size: min(2.1rem, 27px);
   }
 
   @media (min-width: variables.$desktop) {
-    margin-bottom: 28px;
-    font-size: 21px;
+    margin-bottom: min(2.8rem, 42px);
+    font-size: min(2.1rem, 31px);
   }
 }
 
@@ -132,38 +134,38 @@
 .form__list {
   @include mixins.list-reset;
   display: grid;
-  gap: 16px;
+  gap: min(1.6rem, 24px);
 
   @media (min-width: variables.$tablet) {
-    gap: 16px;
+    gap: min(1.6rem, 20px);
 
     &:has(input[type="radio"], input[type="checkbox"]) {
       grid-template-columns: repeat(2, 1fr);
     }
 
     &:has(input[type="radio"]) {
-      padding: 0 36px;
+      padding: 0 min(3.6rem, 46px);
     }
 
     &:has(input[type="checkbox"]) {
-      column-gap: 31px;
-      padding: 0 84px;
+      column-gap: min(3.1rem, 39px);
+      padding: 0 min(8.4rem, 107px);
     }
   }
 
   @media (min-width: variables.$desktop) {
-    gap: 16px;
+    gap: min(1.6rem, 24px);
 
     &:has(input[type="radio"]) {
       grid-template-columns: repeat(auto-fit, minmax(238px, 1fr));
-      column-gap: 70px;
-      padding: 18px 53px;
+      column-gap: min(7rem, 105px);
+      padding: min(1.8rem, 27px) min(5.3rem, 79px);
     }
 
     &:has(input[type="checkbox"]) {
       grid-template-columns: repeat(auto-fit, minmax(153px, 1fr));
-      column-gap: 64px;
-      padding: 31px 44px;
+      column-gap: min(6.4rem, 96px);
+      padding: min(3.1rem, 46px) min(4.4rem, 66px);
     }
   }
 }
@@ -174,77 +176,77 @@
 }
 
 .form__label {
-  padding-left: 16px;
+  padding-left: min(1.6rem, 24px);
 
   @media (min-width: variables.$tablet) {
-    padding-left: 16px;
+    padding-left: min(1.6rem, 20px);
   }
 
   @media (min-width: variables.$desktop) {
-    padding-left: 16px;
+    padding-left: min(1.6rem, 24px);
   }
 }
 
 .form__control {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: min(1.6rem, 24px);
 
   @media (min-width: variables.$tablet) {
-    gap: 16px;
+    gap: min(1.6rem, 20px);
   }
 
   @media (min-width: variables.$desktop) {
-    gap: 16px;
+    gap: min(1.6rem, 24px);
   }
 }
 
 .form__control .form__label {
   padding: 0;
-  font-size: 18px;
-  line-height: 26px;
+  font-size: min(1.8rem, 27px);
+  line-height: min(2.6rem, 39px);
   font-weight: 700;
   text-transform: none;
   color: variables.$text-primary;
 
   @media (min-width: variables.$tablet) {
-    font-size: 18px;
-    line-height: 26px;
+    font-size: min(1.8rem, 23px);
+    line-height: min(2.6rem, 33px);
   }
 
   @media (min-width: variables.$desktop) {
-    font-size: 18px;
-    line-height: 26px;
+    font-size: min(1.8rem, 27px);
+    line-height: min(2.6rem, 39px);
   }
 }
 
 .form__textarea {
   width: 100%;
-  min-height: 150px;
+  min-height: min(15rem, 225px);
 
   @media (min-width: variables.$tablet) {
-    min-height: 160px;
+    min-height: min(16rem, 204px);
   }
 
   @media (min-width: variables.$desktop) {
-    min-height: 160px;
+    min-height: min(16rem, 240px);
   }
 }
 
 .form__footer {
-  padding-top: 28px;
+  padding-top: min(2.8rem, 37px);
 
   @media (min-width: variables.$tablet) {
     grid-column: 1 / -1;
     display: grid;
-    grid-template-columns: 324px 1fr;
+    grid-template-columns: min(32.4rem, 413px) 1fr;
     align-items: center;
-    padding-top: 45px;
+    padding-top: min(4.5rem, 57px);
   }
 
   @media (min-width: variables.$desktop) {
-    grid-template-columns: 384px 1fr;
-    padding: 44px 96px 0;
+    grid-template-columns: min(38.4rem, 576px) 1fr;
+    padding: min(4.4rem, 66px) min(9.6rem, 144px) 0;
   }
 }
 

@@ -1,25 +1,25 @@
 @use "../common/variables.scss";
 
 .field {
-  padding: 16px;
+  padding: min(1.6rem, 24px);
   font-family: variables.$font-primary;
-  font-size: 18px;
-  line-height: 26px;
+  font-size: min(1.8rem, 27px);
+  line-height: min(2.6rem, 39px);
   font-weight: 700;
   color: variables.$text-primary;
   background-color: variables.$color-field-primary;
   border: none;
 
   @media (min-width: variables.$tablet) {
-    padding: 16px;
-    font-size: 18px;
-    line-height: 26px;
+    padding: min(1.6rem, 20px);
+    font-size: min(1.8rem, 23px);
+    line-height: min(2.6rem, 33px);
   }
 
   @media (min-width: variables.$desktop) {
-    padding: 16px;
-    font-size: 18px;
-    line-height: 26px;
+    padding: min(1.6rem, 24px);
+    font-size: min(1.8rem, 27px);
+    line-height: min(2.6rem, 39px);
   }
 
   &::placeholder {

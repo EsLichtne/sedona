@@ -4,15 +4,44 @@
   &:is([type="tel"], [type="email"]) {
     background-image:
       url("../img/sprite.svg#phone"),
-      linear-gradient(270deg, variables.$color-field-secondary 58px, variables.$color-field-primary 58px);
+      linear-gradient(270deg, variables.$color-field-secondary min(5.8rem, 87px), variables.$color-field-primary min(5.8rem, 87px));
     background-repeat: no-repeat;
-    background-size: 18px 18px, 100%;
-    background-position: right 20px top 20px, center;
+    background-size: min(1.8rem, 27px) min(1.8rem, 27px), 100%;
+    background-position: right min(2rem, 30px) top min(2rem, 30px), center;
+
+    @media (min-width: variables.$tablet) {
+      background-image:
+        url("../img/sprite.svg#phone"),
+        linear-gradient(270deg, variables.$color-field-secondary min(5.8rem, 74px), variables.$color-field-primary min(5.8rem, 74px));
+      background-size: min(1.8rem, 23px) min(1.8rem, 23px), 100%;
+      background-position: right min(2rem, 25px) top min(2rem, 25px), center;
+    }
+
+    @media (min-width: variables.$desktop) {
+      background-image:
+        url("../img/sprite.svg#phone"),
+        linear-gradient(270deg, variables.$color-field-secondary min(5.8rem, 87px), variables.$color-field-primary min(5.8rem, 87px));
+      background-repeat: no-repeat;
+      background-size: min(1.8rem, 27px) min(1.8rem, 27px), 100%;
+      background-position: right min(2rem, 30px) top min(2rem, 30px), center;
+    }
   }
 
   &[type="email"] {
     background-image:
       url("../img/sprite.svg#email"),
-      linear-gradient(270deg, variables.$color-field-secondary 58px, variables.$color-field-primary 58px);
+      linear-gradient(270deg, variables.$color-field-secondary min(5.8rem, 87px), variables.$color-field-primary min(5.8rem, 87px));
+
+    @media (min-width: variables.$tablet) {
+      background-image:
+        url("../img/sprite.svg#email"),
+        linear-gradient(270deg, variables.$color-field-secondary min(5.8rem, 74px), variables.$color-field-primary min(5.8rem, 74px));
+    }
+
+    @media (min-width: variables.$desktop) {
+      background-image:
+        url("../img/sprite.svg#email"),
+        linear-gradient(270deg, variables.$color-field-secondary min(5.8rem, 87px), variables.$color-field-primary min(5.8rem, 87px));
+    }
   }
 }

@@ -1,43 +1,43 @@
 @use "../common/variables.scss";
 
 .review {
-  padding: 37px 20px 22px;
+  padding: min(3.7rem, 55px) min(2rem, 30px) min(2.2rem, 33px);
   text-align: center;
   background-color: variables.$color-secondary;
 
   @media (min-width: variables.$tablet) {
-    padding: 64px 60px;
+    padding: min(6.4rem, 82px) min(6rem, 76px);
   }
 
   @media (min-width: variables.$desktop) {
-    padding: 115px 120px 64px;
+    padding: min(11.5rem, 172px) min(12rem, 180px) min(6.4rem, 96px);
   }
 }
 
 .review__title {
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: min(2.4rem, 36px);
 
   @media (min-width: variables.$tablet) {
-    margin-bottom: 20px;
+    margin-bottom: min(2rem, 25px);
   }
 
   @media (min-width: variables.$desktop) {
-    margin-bottom: 31px;
+    margin-bottom: min(3.1rem, 46px);
   }
 }
 
 .review__description {
   margin: 0 auto;
-  margin-bottom: 27px;
+  margin-bottom: min(2.7rem, 40px);
 
   @media (min-width: variables.$tablet) {
-    max-width: 435px;
-    margin-bottom: 109px;
+    max-width: min(43.5rem, 555px);
+    margin-bottom: min(10.9rem, 139px);
   }
 
   @media (min-width: variables.$desktop) {
-    max-width: 435px;
-    margin-bottom: 68px;
+    max-width: min(43.5rem, 652px);
+    margin-bottom: min(6.8rem, 102px);
   }
 }

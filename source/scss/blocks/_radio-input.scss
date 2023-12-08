@@ -4,39 +4,39 @@
   display: grid;
   place-content: center;
   appearance: none;
-  width: 46px;
-  height: 46px;
+  width: min(4.6rem, 69px);
+  height: min(4.6rem, 69px);
   margin: 0;
   padding: 0;
   background-color: variables.$color-field-primary;
   border-radius: 50%;
 
   @media (min-width: variables.$tablet) {
-    width: 46px;
-    height: 46px;
+    width: min(4.6rem, 59px);
+    height: min(4.6rem, 59px);
   }
 
   @media (min-width: variables.$desktop) {
-    width: 46px;
-    height: 46px;
+    width: min(4.6rem, 69px);
+    height: min(4.6rem, 69px);
   }
 
   &:checked::before {
     content: "";
     display: block;
-    width: 16px;
-    height: 16px;
+    width: min(1.6rem, 24px);
+    height: min(1.6rem, 24px);
     border-radius: 50%;
     background-color: variables.$text-secondary;
 
     @media (min-width: variables.$tablet) {
-      width: 16px;
-      height: 16px;
+      width: min(1.6rem, 20px);
+      height: min(1.6rem, 20px);
     }
 
     @media (min-width: variables.$desktop) {
-      width: 16px;
-      height: 16px;
+      width: min(1.6rem, 24px);
+      height: min(1.6rem, 24px);
     }
   }
 }
