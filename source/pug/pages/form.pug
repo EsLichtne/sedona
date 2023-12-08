@@ -22,21 +22,21 @@ block content
         h2.form__legend.title.title--secondary Представьтесь:
         ul.form__list
           li.form__item
-            label.form__label(for='name') Имя*:
+            label.form__label.description(for='name') Имя*:
             input#name.form__field.input.field(
               type='text'
               name='name'
               placeholder='Пётр'
               required)
           li.form__item
-            label.form__label(for='surname') Фамилия*:
+            label.form__label.description(for='surname') Фамилия*:
             input#surname.form__field.input.field(
               type='text'
               name='surname'
               placeholder='Пустота'
               required)
           li.form__item
-            label.form__label(for='patronymic') Отчество:
+            label.form__label.description(for='patronymic') Отчество:
             input#patronymic.form__field.input.field(
               type='text'
               name='patronymic'
@@ -45,14 +45,14 @@ block content
         h2.form__legend.title.title--secondary Контактная информация:
         ul.form__list
           li.form__item
-            label.form__label(for='phone') Контактный телефон*:
+            label.form__label.description(for='phone') Контактный телефон*:
             input#phone.form__field.input.field(
               type='tel'
               name='phone'
               placeholder='Введите телефон'
               required)
           li.form__item
-            label.form__label(for='email') Электронная почта*:
+            label.form__label.description(for='email') Электронная почта*:
             input#email.form__field.input.field(
               type='email'
               name='email'
@@ -68,21 +68,21 @@ block content
                 name='impression'
                 value='positive'
                 checked)
-              span.form__label Скорее положительное
+              span.form__label.description Скорее положительное
           li.form__item
             label.form__control
               input.form__field.radio-input(
                 type='radio'
                 name='impression'
                 value='negative')
-              span.form__label Скорее отрицательное
+              span.form__label.description Скорее отрицательное
           li.form__item
             label.form__control
               input.form__field.radio-input(
                 type='radio'
                 name='impression'
                 value='difficult')
-              span.form__label Затрудняюсь ответить
+              span.form__label.description Затрудняюсь ответить
       fieldset.form__fieldset
         h2.form__legend.title.title--secondary Посещённые достопримечательности:
         ul.form__list
@@ -92,27 +92,27 @@ block content
                 type='checkbox'
                 name='devils-bridge'
                 checked)
-              span.form__label Мост Дьявола
+              span.form__label.description Мост Дьявола
           li.form__item
             label.form__control
               input.form__field.checkbox-input(
                 type='checkbox'
                 name='bell-mountain'
                 checked)
-              span.form__label Гора-Колокол
+              span.form__label.description Гора-Колокол
           li.form__item
             label.form__control
               input.form__field.checkbox-input(
                 type='checkbox'
                 name='slide-park'
                 checked)
-              span.form__label Слайд-парк
+              span.form__label.description Слайд-парк
           li.form__item
             label.form__control
               input.form__field.checkbox-input(
                 type='checkbox'
                 name='red-rocks')
-              span.form__label Красные скалы
+              span.form__label.description Красные скалы
       fieldset.form__fieldset
         h2.form__legend.title.title--secondary Опишите свои эмоции:
         textarea.form__textarea.textarea.field(
