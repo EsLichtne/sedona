@@ -68,8 +68,22 @@ module.exports = (env) => {
         {
           test: /\.scss$/,
           use: [
-            "css-loader",
-            "sass-loader"
+            'css-loader',
+
+            {
+              loader: "postcss-loader",
+              options: {
+                postcssOptions: {
+                  plugins: [
+                    [
+                      "autoprefixer"
+                    ],
+                  ],
+                },
+              }
+            },
+
+            'sass-loader'
           ],
         },
         {
