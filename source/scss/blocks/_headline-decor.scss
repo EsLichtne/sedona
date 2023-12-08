@@ -1,0 +1,17 @@
+@use "../common/variables.scss";
+
+.headline-decor {
+  @media (min-width: variables.$tablet) {
+    display: flex;
+    align-items: center;
+    gap: 47px;
+
+    &::before,
+    &::after {
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: #dbdbdb;
+    }
+  }
+}

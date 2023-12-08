@@ -5,4 +5,10 @@
   line-height: 21px;
   text-transform: uppercase;
   color: rgba(51, 51, 51, .6);
+
+  @media (min-width: variables.$tablet) {
+    font-size: 14px;
+    line-height: 21px;
+    color: variables.$text-secondary;
+  }
 }

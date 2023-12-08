@@ -4,14 +4,27 @@
   padding: 37px 20px 22px;
   text-align: center;
   background-color: variables.$color-secondary;
+
+  @media (min-width: variables.$tablet) {
+    padding: 64px 60px;
+  }
 }
 
 .review__title {
   margin: 0;
   margin-bottom: 24px;
+
+  @media (min-width: variables.$tablet) {
+    margin-bottom: 20px;
+  }
 }
 
 .review__description {
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 27px;
+
+  @media (min-width: variables.$tablet) {
+    max-width: 435px;
+    margin-bottom: 109px;
+  }
 }

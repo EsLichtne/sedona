@@ -11,6 +11,11 @@
   background-color: variables.$color-field-primary;
   border-radius: 50%;
 
+  @media (min-width: variables.$tablet) {
+    width: 46px;
+    height: 46px;
+  }
+
   &:checked::before {
     content: "";
     display: block;
@@ -18,5 +23,10 @@
     height: 16px;
     border-radius: 50%;
     background-color: variables.$text-secondary;
+
+    @media (min-width: variables.$tablet) {
+      width: 16px;
+      height: 16px;
+    }
   }
 }

@@ -1,6 +1,13 @@
 @use "../common/variables.scss";
 @use "../common/mixins.scss";
 
+.form {
+  @media (min-width: variables.$tablet) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .form__fieldset {
   position: relative;
   margin: 0;
@@ -9,18 +16,51 @@
 
   &:nth-child(1) {
     padding-bottom: 40px;
+
+    @media (min-width: variables.$tablet) {
+      grid-column: 1 / 2;
+      margin-bottom: 63px;
+      padding: 0;
+      padding-right: 28px;
+      border-right: 1px solid #dbdbdb;
+    }
   }
 
   &:nth-child(2) {
     padding-bottom: 34px;
+
+    @media (min-width: variables.$tablet) {
+      grid-column: 2 / 3;
+      padding: 0;
+      padding-left: 28px;
+    }
   }
 
   &:nth-child(3) {
     padding-bottom: 23px;
+
+    @media (min-width: variables.$tablet) {
+      grid-column: 1 / -1;
+      margin-bottom: 48px;
+      padding: 0;
+    }
   }
 
   &:nth-child(4) {
     padding-bottom: 24px;
+
+    @media (min-width: variables.$tablet) {
+      grid-column: 1 / -1;
+      margin-bottom: 42px;
+      padding: 0;
+    }
+  }
+
+  &:nth-child(5) {
+    @media (min-width: variables.$tablet) {
+      grid-column: 1 / -1;
+      padding: 0;
+    }
   }
 
   &::before {
@@ -38,15 +78,48 @@
   }
 }
 
+.form__legend-wrapper {
+  @media (min-width: variables.$tablet) {
+    margin-bottom: 28px;
+  }
+}
+
 .form__legend {
   margin: 0;
   margin-bottom: 20px;
+
+  @media (min-width: variables.$tablet) {
+    min-width: fit-content;
+    margin-bottom: 28px;
+    font-size: 21px;
+  }
+}
+
+.form__legend-wrapper .form__legend {
+  margin: 0;
 }
 
 .form__list {
   @include mixins.list-reset;
   display: grid;
   gap: 16px;
+
+  @media (min-width: variables.$tablet) {
+    gap: 16px;
+
+    &:has(input[type="radio"], input[type="checkbox"]) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &:has(input[type="radio"]) {
+      padding: 0 36px;
+    }
+
+    &:has(input[type="checkbox"]) {
+      column-gap: 31px;
+      padding: 0 84px;
+    }
+  }
 }
 
 .form__item {
@@ -56,16 +129,20 @@
 
 .form__label {
   padding-left: 16px;
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
-  color: variables.$text-secondary;
+
+  @media (min-width: variables.$tablet) {
+    padding-left: 16px;
+  }
 }
 
 .form__control {
   display: flex;
   align-items: center;
   gap: 16px;
+
+  @media (min-width: variables.$tablet) {
+    gap: 16px;
+  }
 }
 
 .form__control .form__label {
@@ -75,15 +152,32 @@
   font-weight: 700;
   text-transform: none;
   color: variables.$text-primary;
+
+  @media (min-width: variables.$tablet) {
+    font-size: 18px;
+    line-height: 26px;
+  }
 }
 
 .form__textarea {
   width: 100%;
   min-height: 150px;
+
+  @media (min-width: variables.$tablet) {
+    min-height: 160px;
+  }
 }
 
 .form__footer {
   padding-top: 28px;
+
+  @media (min-width: variables.$tablet) {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 324px 1fr;
+    align-items: center;
+    padding-top: 45px;
+  }
 }
 
 .form__button {

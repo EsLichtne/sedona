@@ -15,13 +15,29 @@
   width: 320px;
   margin-top: 116px;
   text-align: center;
+  text-wrap: balance;
   color: variables.$text-primary;
   background-color: variables.$color-secondary;
+
+  @media (min-width: variables.$tablet) {
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 283px;
+  }
 }
 
 .message__title {
   margin: 0;
   margin-bottom: 25px;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+
+  @media (min-width: variables.$tablet) {
+    margin-bottom: 23px;
+    font-size: 30px;
+    line-height: 40px;
+  }
 }
 
 .message__text {
@@ -31,29 +47,55 @@
 .message__button {
   width: 100%;
   font-size: 18px;
+
+  @media (min-width: variables.$tablet) {
+    font-size: 21px;
+  }
 }
 
 .message--error {
   & .message__wrapper {
     padding: 45px 42px 0;
+
+    @media (min-width: variables.$tablet) {
+      padding: 48px 46px 0;
+    }
   }
 
   & .message__text {
     margin-bottom: 14px;
+
+    @media (min-width: variables.$tablet) {
+      margin-bottom: 33px;
+    }
   }
 
   & .message__footer {
     padding: 14px 28px 35px;
+
+    @media (min-width: variables.$tablet) {
+      padding: 14px 18px 49px;
+    }
   }
 }
 
 .message--success {
   & .message__wrapper {
     padding: 39px 38px 0;
+
+    @media (min-width: variables.$tablet) {
+      width: 640px;
+      margin-top: 162px;
+      padding: 44px 97px 0;
+    }
   }
 
   & .message__text {
     margin-bottom: 51px;
+
+    @media (min-width: variables.$tablet) {
+      margin-bottom: 52px;
+    }
   }
 
   & .message__footer {
@@ -61,5 +103,11 @@
     margin-left: -38px;
     padding: 20px;
     background-color: #f2f2f2;
+
+    @media (min-width: variables.$tablet) {
+      width: calc(100% + 194px);
+      margin-left: -97px;
+      padding: 44px 91px;
+    }
   }
 }

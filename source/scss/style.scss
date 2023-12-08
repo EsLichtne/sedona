@@ -10,7 +10,9 @@
 @use "blocks/container";
 @use "blocks/description";
 @use "blocks/footer";
+@use "blocks/footnote";
 @use "blocks/header";
+@use "blocks/headline-decor";
 @use "blocks/logo";
 @use "blocks/message";
 @use "blocks/navigation";
@@ -34,7 +36,6 @@
 //Form
 @use "blocks/checkbox-input";
 @use "blocks/field";
-@use "blocks/footnote";
 @use "blocks/form";
 @use "blocks/input";
 @use "blocks/radio-input";
