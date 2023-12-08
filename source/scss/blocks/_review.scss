@@ -8,6 +8,10 @@
   @media (min-width: variables.$tablet) {
     padding: 64px 60px;
   }
+
+  @media (min-width: variables.$desktop) {
+    padding: 115px 120px 64px;
+  }
 }
 
 .review__title {
@@ -16,6 +20,10 @@
 
   @media (min-width: variables.$tablet) {
     margin-bottom: 20px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    margin-bottom: 31px;
   }
 }
 
@@ -26,5 +34,10 @@
   @media (min-width: variables.$tablet) {
     max-width: 435px;
     margin-bottom: 109px;
+  }
+
+  @media (min-width: variables.$desktop) {
+    max-width: 435px;
+    margin-bottom: 68px;
   }
 }

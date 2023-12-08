@@ -16,6 +16,11 @@
     height: 46px;
   }
 
+  @media (min-width: variables.$desktop) {
+    width: 46px;
+    height: 46px;
+  }
+
   &:checked::before {
     content: "";
     display: block;
@@ -25,6 +30,11 @@
     background-color: variables.$text-secondary;
 
     @media (min-width: variables.$tablet) {
+      width: 16px;
+      height: 16px;
+    }
+
+    @media (min-width: variables.$desktop) {
       width: 16px;
       height: 16px;
     }
