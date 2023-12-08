@@ -5,7 +5,7 @@ mixin message(type)
   template(id=`${type.modifier}`)
     section.message(class=`message--${type.modifier}`)
       .message__wrapper
-        h2.message__title.title.title--secondary #{type.title}
+        h2.message__title #{type.title}
         p.message__text.description #{type.text[0]}
           br
           | #{type.text[1]}
