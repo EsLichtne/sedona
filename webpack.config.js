@@ -1,7 +1,7 @@
 const path = require('path');
-const webpack = require('webpack');
 const PugPlugin = require('pug-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
+const ImageminWebpWebpackPlugin = require("imagemin-webp-webpack-plugin");
 
 module.exports = (env) => {
 
@@ -39,6 +39,15 @@ module.exports = (env) => {
           {from: 'source/favicon.ico', to: ''},
           {from: 'source/manifest.webmanifest', to: ''}
         ]
+      }),
+
+      new ImageminWebpWebpackPlugin({
+        config: [{
+          test: /\.(jpg|png)/,
+          options: {
+            quality: 80
+          }
+        }]
       })
     ],
 
