@@ -6,4 +6,6 @@ mixin head(name)
       meta(name='viewport' content='width=device-width, initial-scale=1')
       include ../_links.pug
       include ../_scripts.pug
+      if block
+        block
       title Седона: #{name}
