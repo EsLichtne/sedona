@@ -103,10 +103,10 @@ module.exports = (env) => {
           },
         },
         {
-          test: /\.(png|jpg|svg)/,
+          test: /\.(png|jpg|webp|svg)/,
           type: 'asset/resource',
           generator: {
-            filename: 'img/[name].[hash:8][ext]',
+            filename: 'img/[name][ext]',
           },
         },
       ],
