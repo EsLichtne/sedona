@@ -18,9 +18,39 @@ block content
       li.gallery__item.product-card
         a.product-card__image-wrapper(href="")
           picture
-            source(media='(min-width: 1024px)' srcset='img/gallery-1-desktop.jpg' width='1200' height='400')
-            source(media='(min-width: 640px)' srcset='img/gallery-1-tablet.jpg' width='648' height='400')
-            img.product-card__image(src='img/gallery-1-mobile.jpg' width='280' height='280' alt='')
+            source(
+              type='image/webp'
+              media='(min-width: 1024px)'
+              srcset='img/gallery-1-desktop.webp 1x, img/gallery-1-desktop@2x.webp 2x'
+              width='1200'
+              height='400')
+            source(
+              type='image/webp'
+              media='(min-width: 640px)'
+              srcset='img/gallery-1-tablet.webp 1x, img/gallery-1-tablet@2x.webp 2x'
+              width='648'
+              height='400')
+            source(
+              type='image/webp'
+              srcset='img/gallery-1-mobile.webp 1x, img/gallery-1-mobile@2x.webp 2x'
+              width='280'
+              height='280')
+            source(
+              media='(min-width: 1024px)'
+              srcset='img/gallery-1-desktop.jpg 1x, img/gallery-1-desktop@2x.jpg 2x'
+              width='1200'
+              height='400')
+            source(
+              media='(min-width: 640px)'
+              srcset='img/gallery-1-tablet.jpg 1x, img/gallery-1-tablet@2x.jpg 2x'
+              width='648'
+              height='400')
+            img.product-card__image(
+              src='img/gallery-1-mobile.jpg'
+              srcset='img/gallery-1-mobile@2x.jpg 2x'
+              width='280'
+              height='280'
+              alt='')
         .product-card__content-wrapper
           h3.product-card__title Неродные просторы
           p.product-card__author
@@ -31,9 +61,39 @@ block content
       li.gallery__item.product-card
         a.product-card__image-wrapper(href="")
           picture
-            source(media='(min-width: 1024px)' srcset='img/gallery-2-desktop.jpg' width='400' height='267')
-            source(media='(min-width: 640px)' srcset='img/gallery-2-tablet.jpg' width='324' height='267')
-            img.product-card__image(src='img/gallery-2-mobile.jpg' width='280' height='280' alt='')
+            source(
+              type='image/webp'
+              media='(min-width: 1024px)'
+              srcset='img/gallery-2-desktop.webp 1x, img/gallery-2-desktop@2x.webp 2x'
+              width='1200'
+              height='400')
+            source(
+              type='image/webp'
+              media='(min-width: 640px)'
+              srcset='img/gallery-2-tablet.webp 1x, img/gallery-2-tablet@2x.webp 2x'
+              width='648'
+              height='400')
+            source(
+              type='image/webp'
+              srcset='img/gallery-2-mobile.webp 1x, img/gallery-2-mobile@2x.webp 2x'
+              width='280'
+              height='280')
+            source(
+              media='(min-width: 1024px)'
+              srcset='img/gallery-2-desktop.jpg 1x, img/gallery-2-desktop@2x.jpg 2x'
+              width='1200'
+              height='400')
+            source(
+              media='(min-width: 640px)'
+              srcset='img/gallery-2-tablet.jpg 1x, img/gallery-2-tablet@2x.jpg 2x'
+              width='648'
+              height='400')
+            img.product-card__image(
+              src='img/gallery-2-mobile.jpg'
+              srcset='img/gallery-2-mobile@2x.jpg 2x'
+              width='280'
+              height='280'
+              alt='')
         .product-card__content-wrapper
           h3.product-card__title Местная растительность
           p.product-card__author
@@ -44,9 +104,39 @@ block content
       li.gallery__item.product-card
         a.product-card__image-wrapper(href="")
           picture
-            source(media='(min-width: 1024px)' srcset='img/gallery-3-desktop.jpg' width='400' height='267')
-            source(media='(min-width: 640px)' srcset='img/gallery-3-tablet.jpg' width='324' height='267')
-            img.product-card__image(src='img/gallery-3-mobile.jpg' width='280' height='280' alt='')
+            source(
+              type='image/webp'
+              media='(min-width: 1024px)'
+              srcset='img/gallery-3-desktop.webp 1x, img/gallery-3-desktop@2x.webp 2x'
+              width='1200'
+              height='400')
+            source(
+              type='image/webp'
+              media='(min-width: 640px)'
+              srcset='img/gallery-3-tablet.webp 1x, img/gallery-3-tablet@2x.webp 2x'
+              width='648'
+              height='400')
+            source(
+              type='image/webp'
+              srcset='img/gallery-3-mobile.webp 1x, img/gallery-3-mobile@2x.webp 2x'
+              width='280'
+              height='280')
+            source(
+              media='(min-width: 1024px)'
+              srcset='img/gallery-3-desktop.jpg 1x, img/gallery-3-desktop@2x.jpg 2x'
+              width='1200'
+              height='400')
+            source(
+              media='(min-width: 640px)'
+              srcset='img/gallery-3-tablet.jpg 1x, img/gallery-3-tablet@2x.jpg 2x'
+              width='648'
+              height='400')
+            img.product-card__image(
+              src='img/gallery-3-mobile.jpg'
+              srcset='img/gallery-3-mobile@2x.jpg 2x'
+              width='280'
+              height='280'
+              alt='')
         .product-card__content-wrapper
           h3.product-card__title Дорога на север
           p.product-card__author
@@ -57,9 +147,39 @@ block content
       li.gallery__item.product-card
         a.product-card__image-wrapper(href="")
           picture
-            source(media='(min-width: 1024px)' srcset='img/gallery-4-desktop.jpg' width='400' height='267')
-            source(media='(min-width: 640px)' srcset='img/gallery-4-tablet.jpg' width='324' height='267')
-            img.product-card__image(src='img/gallery-4-mobile.jpg' width='280' height='280' alt='')
+            source(
+              type='image/webp'
+              media='(min-width: 1024px)'
+              srcset='img/gallery-4-desktop.webp 1x, img/gallery-4-desktop@2x.webp 2x'
+              width='1200'
+              height='400')
+            source(
+              type='image/webp'
+              media='(min-width: 640px)'
+              srcset='img/gallery-4-tablet.webp 1x, img/gallery-4-tablet@2x.webp 2x'
+              width='648'
+              height='400')
+            source(
+              type='image/webp'
+              srcset='img/gallery-4-mobile.webp 1x, img/gallery-4-mobile@2x.webp 2x'
+              width='280'
+              height='280')
+            source(
+              media='(min-width: 1024px)'
+              srcset='img/gallery-4-desktop.jpg 1x, img/gallery-4-desktop@2x.jpg 2x'
+              width='1200'
+              height='400')
+            source(
+              media='(min-width: 640px)'
+              srcset='img/gallery-4-tablet.jpg 1x, img/gallery-4-tablet@2x.jpg 2x'
+              width='648'
+              height='400')
+            img.product-card__image(
+              src='img/gallery-4-mobile.jpg'
+              srcset='img/gallery-4-mobile@2x.jpg 2x'
+              width='280'
+              height='280'
+              alt='')
         .product-card__content-wrapper
           h3.product-card__title Мост дьявола
           p.product-card__author
@@ -75,8 +195,38 @@ block content
     .presentation__video.video
       a.video__link(href='#' tabindex='-1')
         picture
-          source(media='(min-width: 1024px)' srcset='img/video-desktop.jpg')
-          source(media='(min-width: 640px)' srcset='img/video-tablet.jpg')
-          img.video__image(src='img/video-mobile.jpg' alt='Видеопрезентация о Седоне.')
+          source(
+            type='image/webp'
+            media='(min-width: 1024px)'
+            srcset='img/video-desktop.webp 1x, img/video-desktop@2x.webp 2x'
+            width='800'
+            height='500')
+          source(
+            type='image/webp'
+            media='(min-width: 640px)'
+            srcset='img/video-tablet.webp 1x, img/video-tablet@2x.webp 2x'
+            width='648'
+            height='500')
+          source(
+            type='image/webp'
+            srcset='img/video-mobile.webp 1x, img/video-mobile@2x.webp 2x'
+            width='280'
+            height='177')
+          source(
+            media='(min-width: 1024px)'
+            srcset='img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x'
+            width='800'
+            height='500')
+          source(
+            media='(min-width: 640px)'
+            srcset='img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x'
+            width='648'
+            height='500')
+          img.video__image(
+            src='img/video-mobile.jpg'
+            srcset='img/video-mobile@2x.jpg 2x'
+            width='280'
+            height='177'
+            alt='Видеопрезентация о Седоне.')
         button.video__button
           span.visually-hidden Запустить видео.
