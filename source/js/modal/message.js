@@ -4,17 +4,20 @@ const createMessage = (type) => {
   const button = message.querySelector('.message__button');
   document.body.appendChild(message);
 
+  const removeMessage = () => {
+    message.remove();
+    document.dispatchEvent(new Event('removeMessage'));
+  };
+
   document.addEventListener('click', (event) => {
     if (event.target === message || event.target === button) {
-      message.remove();
-      document.dispatchEvent(new Event('removeMessage'));
+      removeMessage();
     }
   })
 
   document.addEventListener('keydown', (event) => {
     if (event.key.startsWith('Esc')) {
-      message.remove();
-      document.dispatchEvent(new Event('removeMessage'));
+      removeMessage();
     }
   })
 };
