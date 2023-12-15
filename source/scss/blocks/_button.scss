@@ -38,5 +38,6 @@
 
   &:disabled {
     background-color: variables.$color-primary-disabled;
+    cursor: not-allowed;
   }
 }
