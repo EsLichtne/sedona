@@ -27,14 +27,20 @@ block content
               type='text'
               name='name'
               placeholder='Пётр'
-              required)
+              required
+              pattern='/[а-яёa-z]+$/i'
+              data-pristine-required-message='Введите ваше имя'
+              data-pristine-pattern-message='Введите корректные данные')
           li.form__item
             label.form__label.description(for='surname') Фамилия*:
             input#surname.form__field.input.field(
               type='text'
               name='surname'
               placeholder='Пустота'
-              required)
+              required
+              pattern='/[а-яёa-z]+$/i'
+              data-pristine-required-message='Введите вашу фамилию'
+              data-pristine-pattern-message='Введите корректные данные')
           li.form__item
             label.form__label.description(for='patronymic') Отчество:
             input#patronymic.form__field.input.field(
@@ -50,14 +56,19 @@ block content
               type='tel'
               name='phone'
               placeholder='Введите телефон'
-              required)
+              required
+              pattern='/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/'
+              data-pristine-required-message='Введите телефон'
+              data-pristine-pattern-message='Укажите корректный номер')
           li.form__item
             label.form__label.description(for='email') Электронная почта*:
             input#email.form__field.input.field(
               type='email'
               name='email'
               placeholder='Введите e-mail'
-              required)
+              required
+              data-pristine-required-message='Введите e-mail'
+              data-pristine-email-message='Введите корректный адрес')
       fieldset.form__fieldset
         .form__legend-wrapper.headline-decor
           h2.form__legend.title.title--secondary Ваше общее впечатление:
