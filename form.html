@@ -5,12 +5,13 @@
     <meta name="description" content="Идеальный городок для туризма">
     <meta name="keywords" content="туристический город, путешествия, Аризона">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.f417d2a5.css" rel="stylesheet">
+    <link href="css/style.fa501faf.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/apple-icon.png">
     <link rel="manifest" href="manifest.webmanifest">
-    <script src="js/index.1.62e80899.js" defer type="module"></script>
+    <script src="js/index.1.bdae778e.js" defer type="module"></script>
+    <script src="../js/vendor/pristine/pristine.min.js" type="text/javascript"></script>
     <title>Седона: Форма отзыва</title>
   </head>
   <body class="page__body">
@@ -46,10 +47,13 @@
               <h2 class="form__legend title title--secondary">Представьтесь:</h2>
               <ul class="form__list">
                 <li class="form__item"><label class="form__label description" for="name">Имя*:</label><input
-                    class="form__field input field" id="name" type="text" name="name" placeholder="Пётр" required></li>
+                    class="form__field input field" id="name" type="text" name="name" placeholder="Пётр" required
+                    pattern="/[а-яёa-z]+$/i" data-pristine-required-message="Введите ваше имя"
+                    data-pristine-pattern-message="Введите корректные данные"></li>
                 <li class="form__item"><label class="form__label description" for="surname">Фамилия*:</label><input
                     class="form__field input field" id="surname" type="text" name="surname" placeholder="Пустота"
-                    required></li>
+                    required pattern="/[а-яёa-z]+$/i" data-pristine-required-message="Введите вашу фамилию"
+                    data-pristine-pattern-message="Введите корректные данные"></li>
                 <li class="form__item"><label class="form__label description" for="patronymic">Отчество:</label><input
                     class="form__field input field" id="patronymic" type="text" name="patronymic"
                     placeholder="Викторович"></li>
@@ -60,10 +64,14 @@
               <ul class="form__list">
                 <li class="form__item"><label class="form__label description" for="phone">Контактный
                     телефон*:</label><input class="form__field input field" id="phone" type="tel" name="phone"
-                    placeholder="Введите телефон" required></li>
+                    placeholder="Введите телефон" required
+                    pattern="/^[+]?[(]?[0-9]{3}[)]?[-s.]?[0-9]{3}[-s.]?[0-9]{4,6}$/"
+                    data-pristine-required-message="Введите телефон"
+                    data-pristine-pattern-message="Укажите корректный номер"></li>
                 <li class="form__item"><label class="form__label description" for="email">Электронная
                     почта*:</label><input class="form__field input field" id="email" type="email" name="email"
-                    placeholder="Введите e-mail" required></li>
+                    placeholder="Введите e-mail" required data-pristine-required-message="Введите e-mail"
+                    data-pristine-email-message="Введите корректный адрес"></li>
               </ul>
             </fieldset>
             <fieldset class="form__fieldset">
