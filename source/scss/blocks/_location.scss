@@ -9,6 +9,19 @@
   }
 }
 
+.location__map {
+  width: 100%;
+  height: min(35rem, 525px);
+
+  @media (min-width: variables.$tablet) {
+    height: min(35rem, 447px);
+  }
+
+  @media (min-width: variables.$desktop) {
+    height: min(35rem, 525px);
+  }
+}
+
 .location__map-image {
   display: block;
   max-width: 100%;
