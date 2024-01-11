@@ -38,7 +38,7 @@ module.exports = (env) => {
           {from: 'source/img/**/*.{png,jpg,webp,svg}', to: 'img/[name][ext]'},
           {from: 'source/favicon.ico', to: ''},
           {from: 'source/manifest.webmanifest', to: ''},
-          {from: 'source/vendor/pristine/pristine.min.js', to: 'js/vendor/pristine'}
+          {from: 'source/vendor', to: 'js/vendor'}
         ]
       }),
 
