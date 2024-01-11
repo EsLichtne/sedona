@@ -16,7 +16,7 @@ const createMessage = (type) => {
   })
 
   document.addEventListener('keydown', (event) => {
-    if (event.key.startsWith('Esc')) {
+    if (event.key && event.key.startsWith('Esc')) {
       removeMessage();
     }
   })
