@@ -1,1 +1,1 @@
-import './navigation/navigation.js';
+import './map/map.js';
