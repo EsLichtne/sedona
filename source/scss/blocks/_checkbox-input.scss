@@ -9,6 +9,7 @@
   margin: 0;
   padding: 0;
   background-color: variables.$color-field-primary;
+  transition: background-color .3s linear;
 
   @media (min-width: variables.$tablet) {
     width: min(4.6rem, 59px);
@@ -28,6 +29,7 @@
     background-image: url("../img/sprite.svg#tick");
     background-repeat: no-repeat;
     background-size: contain;
+    transition: opacity .3s linear;
 
     @media (min-width: variables.$tablet) {
       width: min(2.2rem, 28px);
@@ -37,6 +39,18 @@
     @media (min-width: variables.$desktop) {
       width: min(2.2rem, 33px);
       height: min(1.6rem, 24px);
+    }
+  }
+
+  &:is(:hover, :focus, :focus-visible) {
+    background-color: variables.$color-field-hover;
+  }
+
+  &:active {
+    background-color: variables.$color-field-down;
+
+    &:checked::before {
+      opacity: .3;
     }
   }
 }

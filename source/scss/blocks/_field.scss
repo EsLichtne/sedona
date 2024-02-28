@@ -9,6 +9,7 @@
   color: variables.$text-primary;
   background-color: variables.$color-field-primary;
   border: none;
+  transition: background-color .3s linear, box-shadow .3s linear;
 
   @media (min-width: variables.$tablet) {
     padding: min(1.6rem, 20px);
@@ -26,12 +27,14 @@
     color: rgba(0, 0, 0, .3);
   }
 
-  &:is(:hover, :focus) {
+  &:hover {
     background-color: variables.$color-field-hover;
   }
 
-  &:active {
+  &:focus,
+  &:focus-visible {
     background-color: variables.$color-secondary;
-    outline: 4px solid variables.$color-field-hover;
+    box-shadow: inset 0 0 0 4px variables.$color-field-hover;
+    outline: none;
   }
 }
