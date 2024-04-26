@@ -5,7 +5,7 @@
   "scripts": {
     "start": "webpack --env mode=development && webpack serve --env mode=development",
     "build": "webpack --env mode=production",
-    "deploy": "npm run build"
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.16",
